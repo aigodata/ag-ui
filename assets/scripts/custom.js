@@ -20,11 +20,11 @@ $(function () {
 	toggleBtn.click(function () {
 
 		if ($(this).prev().is(':visible')) {
-			$(this).prev().slideUp(550);
+			$(this).prev().slideUp(150);
 			$(this).text('显示代码');
 
 		} else {
-			$(this).prev().slideDown(550);
+			$(this).prev().slideDown(150);
 			$(this).text('隐藏代码');
 		}
 
