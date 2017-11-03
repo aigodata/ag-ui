@@ -1,0 +1,21 @@
+/* 方便书写的基础样式 */
+
+.rx-fl {
+  float: left;
+}
+
+.rx-fr {
+  float: right;
+}
+
+.rx-clearfix:after {
+  clear: both;
+}
+
+.rx-relative {
+  position: relative;
+}
+
+.rx-absolute {
+  position: absolute;
+}

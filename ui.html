@@ -9,11 +9,12 @@
   <!--网站图标-->
   <link rel="shortcut icon" href="/favicon.ico"/>
   <!--阿里图标-->
-  <link rel="stylesheet" type="text/css" href="/assets/fonts/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="../assets/fonts/iconfont.css">
   <!--代码高亮-->
-  <link rel="stylesheet" type="text/css" href="/assets/styles/vs.css">
+  <link rel="stylesheet" type="text/css" href="../assets/styles/primer.css">
+  <link rel="stylesheet" type="text/css" href="../assets/styles/vs.css">
   <!--自定义样式-->
-  <link rel="stylesheet" type="text/css" href="/assets/styles/custom.css">
+  <link rel="stylesheet" type="text/css" href="../assets/styles/custom.css">
 </head>
 <body>
 <!--外层-->
@@ -29,7 +30,10 @@
         <li ag-click active>
           <a href="#start">Start 快速上手</a>
         </li>
-        <li  ag-click>
+        <li ag-click>
+          <a href="#base">Base 基础</a>
+        </li>
+        <li ag-click>
           <a href="#layout">Layout 布局</a>
         </li>
         <li ag-click>
@@ -38,7 +42,7 @@
         <li ag-click>
           <a href="#font">Font 字体</a>
         </li>
-        <li  ag-click>
+        <li ag-click>
           <a href="#icon">Icon 图标</a>
         </li>
         <li ag-click>
@@ -53,7 +57,8 @@
         <!--标题-->
         <div class="rx-tit">
           <h2>快速上手</h2>
-          <i class="icon iconfont icon-github"></i>
+          <a target="_blank" style="color:inherit;" href="//github.com/aigodata/ag-ui"><i
+            class="icon iconfont icon-github"></i></a>
         </div>
         <!--每个条目 -- 快速上手 -->
         <div>
@@ -63,7 +68,7 @@
           <!--代码块-->
           <div class="rx-margin-top-20 rx-relative code-block">
             <!--复制icon-->
-            <a href="javascript:void(0)" class="icon iconfont icon-fuzhi copy" data-clipboard-action="copy"
+            <a href="javascript:void(0);" class="icon iconfont icon-fuzhi copy" data-clipboard-demo
                data-clipboard-target=".speediness-code-1"></a>
             <pre><code class="speediness-code-1">
 <span>import Vue from 'vue';</span>
@@ -85,8 +90,8 @@
 <span>new Vue({</span>
   <span>el: '#app',</span>
   <span>router: router,</span>
-  <span>render: h => h(App)</span>
-<span>});</span>
+  render: h => h(App)
+});
               </code></pre>
           </div>
         </div>
@@ -101,28 +106,28 @@
             <a href="javascript:void(0)" class="icon iconfont icon-fuzhi copy" data-clipboard-action="copy"
                data-clipboard-target=".speediness-code-2"></a>
             <pre><code class="speediness-code-2">
-<span>import Vue from 'vue';</span>
-<span>import VueRouter from 'vue-router';</span>
-<span>import App from 'components/app.vue';  // 路由挂载</span>
-<span>import Routers from './router.js';  // 路由列表</span>
-<span>import iView from 'iview';</span>
-<span>import 'iview/dist/styles/iview.css';  // 使用 CSS</span>
+              <span>import Vue from 'vue';</span>
+              <span>import VueRouter from 'vue-router';</span>
+              <span>import App from 'components/app.vue';  // 路由挂载</span>
+              <span>import Routers from './router.js';  // 路由列表</span>
+              <span>import iView from 'iview';</span>
+              <span>import 'iview/dist/styles/iview.css';  // 使用 CSS</span>
 
-<span>Vue.use(VueRouter);</span>
-<span>Vue.use(iView);</span>
+              <span>Vue.use(VueRouter);</span>
+              <span>Vue.use(iView);</span>
 
-<span>// 路由配置</span>
-<span>const RouterConfig = {</span>
-  <span>routes: Routers</span>
-<span>};</span>
-<span>const router = new VueRouter(RouterConfig);</span>
+              <span>// 路由配置</span>
+              <span>const RouterConfig = {</span>
+              <span>routes: Routers</span>
+              <span>};</span>
+              <span>const router = new VueRouter(RouterConfig);</span>
 
-<span>new Vue({</span>
-  <span>el: '#app',</span>
-  <span>router: router,</span>
-  <span>render: h => h(App)</span>
-<span>});</span>
-              </code></pre>
+              new Vue({
+              el: '#app',
+              router: router,
+              render: h => h(App)
+              });
+            </code></pre>
           </div>
         </div>
       </div>
@@ -693,17 +698,15 @@
   </div>
 </div>
 <!--脚本库-->
-<script type="text/javascript" src="/assets/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/scripts/jquery.min.js"></script>
 <!--复制插件-->
-<script type="text/javascript" src="/assets/scripts/clipboard.min.js"></script>
+<script type="text/javascript" src="../assets/scripts/clipboard.min.js"></script>
 <!--代码高亮-->
-<script type="text/javascript" src="/assets/scripts/highlight.pack.js"></script>
-<!--自定义脚本-->
-<script type="text/javascript" src="/assets/scripts/ag-click.js"></script>
-
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
-
+<script type="text/javascript" src="../assets/scripts/highlight.pack.min.js"></script>
+<!-- 自定义脚本 -->
+<script type="text/javascript" src="../assets/scripts/demos.js"></script>
+<script type="text/javascript" src="../assets/scripts/snippets.js"></script>
+<script type="text/javascript" src="../assets/scripts/tooltips.js"></script>
+<script type="text/javascript" src="../assets/scripts/ag-click.js"></script>
 </body>
 </html>
