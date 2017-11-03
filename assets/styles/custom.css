@@ -28,6 +28,10 @@ a {
   hide-focus: expression( this.hideFocus=true );
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 a:focus {
   outline: none;
 }
@@ -303,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*布局示例*/
-.rx-demo-layout p.explain {
+p.explain {
   height: 40px;
   line-height: 40px;
   border-radius: 5px;
@@ -649,4 +653,123 @@ code {
 
 .maintainer {
   background: rgba(0,0,0,.05);
+}
+
+[data-clipboard-demo] {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  color: #888;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  height: inherit;
+  line-height: inherit;
+}
+
+[data-clipboard-demo]:focus,
+[data-clipboard-demo]:hover,
+[data-clipboard-demo]:active {
+  background: transparent !important;
+  border-color: transparent !important;;
+  box-shadow: none  !important;;
+}
+
+[layout-code-1][active],
+[layout-code-2][active],
+[layout-code-3][active] {
+  display: block !important;
+}
+
+.layout {
+  padding: 10px;
+}
+.layout .layout-header div {
+  background: #e1e9f0;
+  height: 60px;
+  margin: 0 0 10px;
+}
+.layout .layout-container {
+  height: 160px;
+}
+.layout .layout-left div {
+  background: #e8ecf1;
+  height: 160px;
+  width: 200px;
+  margin: 0 10px 0 0;
+}
+.layout .layout-right {
+  background: #f3f7fb;
+  height: 160px;
+}
+.layout .layout-footer {
+  background: #e1e9f0;
+  height: 60px;
+  margin-top: 10px;
+}
+
+.layout-2 {
+  padding: 10px;
+}
+.layout-2 .layout-container {
+  height: 280px;
+}
+.layout-2 .layout-left div {
+  background: #e8ecf1;
+  height: 280px;
+  width: 200px;
+  margin: 0 10px 0 0;
+}
+.layout-2 .layout-right {
+  height: 280px;
+}
+.layout-2 .layout-header div {
+  background: #e1e9f0;
+  height: 60px;
+  margin: 0 0 10px;
+}
+.layout-2 .layout-content div {
+  background: #f3f7fb;
+  height: 140px;
+}
+.layout-2 .layout-footer {
+  background: #e1e9f0;
+  height: 60px;
+  margin-top: 10px;
+}
+
+.layout-3 {
+  padding: 10px;
+}
+.layout-3 .layout-header div {
+  background: #e1e9f0;
+  height: 60px;
+  margin: 0 0 10px;
+}
+.layout-3 .layout-container {
+  height: 220px;
+}
+.layout-3 .layout-left div {
+  background: #e8ecf1;
+  height: 220px;
+  width: 200px;
+  margin: 0 10px 0 0;
+}
+.layout-3 .layout-right {
+  height: 220px;
+}
+.layout-3 .layout-content div {
+  background: #f3f7fb;
+  height: 150px;
+}
+.layout-3 .layout-footer {
+  background: #e1e9f0;
+  height: 60px;
+  margin-top: 10px;
+}
+
+.color-block div {
+  height: 80px;
+  line-height: 80px;
+  color: #fff;
 }

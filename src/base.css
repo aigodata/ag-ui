@@ -1,21 +1,25 @@
 /* 方便书写的基础样式 */
 
-.rx-fl {
+.ag-fl {
   float: left;
 }
 
-.rx-fr {
+.ag-fr {
   float: right;
 }
 
-.rx-clearfix:after {
+.ag-clearfix:after {
   clear: both;
 }
 
-.rx-relative {
+.ag-relative {
   position: relative;
 }
 
-.rx-absolute {
+.ag-absolute {
   position: absolute;
+}
+
+.ag-text-center {
+  text-align: center;
 }
