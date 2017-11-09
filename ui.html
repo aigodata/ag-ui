@@ -61,7 +61,7 @@
         <!--每段描述-->
         <div>
           <h3>自我介绍</h3>
-          <p>ag-ui是一个致力于降低书写难度的UI, 只求简简单单.</p>
+          <p>ag-ui是一套基于CSS的UI, 只求简简单单.</p>
         </div>
         <!--每段描述-->
         <div>
@@ -198,7 +198,10 @@
                 </pre>
               </div>
               <!--按钮-->
-              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="layout-code-1">显示代码</a>
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="layout-code-1">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
             </div>
           </div>
         </div>
@@ -297,7 +300,10 @@
                 </pre>
               </div>
               <!--按钮-->
-              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="layout-code-2">显示代码</a>
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="layout-code-2">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
             </div>
           </div>
         </div>
@@ -396,7 +402,10 @@
                 </pre>
               </div>
               <!--按钮-->
-              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="layout-code-3">显示代码</a>
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="layout-code-3">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
             </div>
           </div>
         </div>
@@ -406,7 +415,7 @@
         <!--标题-->
         <div class="rx-tit">
           <h2>Color 色彩</h2>
-          <p>我们提供了通用的几十种配色</p>
+          <p>我们提取了42种色值, 方便日常书写.</p>
         </div>
         <!--每个条目 -- Color 色彩 -->
         <div>
@@ -417,11 +426,64 @@
           <!--页面配色-->
           <div class="rx-colour">
             <div class="ag-layout">
-              <div class="ag-text-center ag-grow-auto color-block"><div>1</div></div>
-              <div class="ag-text-center ag-grow-auto color-block"><div>1</div></div>
-              <div class="ag-text-center ag-grow-auto color-block"><div>1</div></div>
-              <div class="ag-text-center ag-grow-auto color-block"><div>1</div></div>
-              <div class="ag-text-center ag-grow-auto color-block"><div>1</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-red-1">red-1</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-red-2">red-2</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-red-3">red-3</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-red-4">red-4</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-red-5 ag-white">red-5</div></div>
+            </div>
+            <div class="ag-layout">
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-orange-1">orange-1</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-orange-2">orange-2</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-orange-3">orange-3</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-orange-4">orange-4</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-orange-5">orange-5</div></div>
+            </div>
+            <div class="ag-layout">
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-yellow-1">yellow-1</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-yellow-2">yellow-2</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-yellow-3">yellow-3</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-yellow-4">yellow-4</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-yellow-5">yellow-5</div></div>
+            </div>
+            <div class="ag-layout">
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-green-1">green-1</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-green-2">green-2</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-green-3">green-3</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-green-4">green-4</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-green-5">green-5</div></div>
+            </div>
+            <div class="ag-layout">
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-cyan-1">cyan-1</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-cyan-2">cyan-2</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-cyan-3">cyan-3</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-cyan-4">cyan-4</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-cyan-5">cyan-5</div></div>
+            </div>
+            <div class="ag-layout">
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-blue-1">blue-1</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-blue-2">blue-2</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-blue-3">blue-3</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-blue-4">blue-4</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-blue-5">blue-5</div></div>
+            </div>
+            <div class="ag-layout">
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-purple-1">purple-1</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-purple-2">purple-2</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-purple-3">purple-3</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-purple-4">purple-4</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-purple-5">purple-5</div></div>
+            </div>
+            <div class="ag-layout">
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-1">gray-1</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-2">gray-2</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-3">gray-3</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-4 ag-white">gray-4</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-5 ag-white">gray-5</div></div>
+            </div>
+            <div class="ag-layout">
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-white ag-black ag-border-gray-1">white</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-black ag-white">black</div></div>
             </div>
           </div>
         </div>
@@ -431,7 +493,30 @@
         <!--标题-->
         <div class="rx-tit">
           <h2>Font 字体</h2>
-          <p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>
+          <!--<p>我们建议使用<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
+        </div>
+        <!--每段描述-->
+        <div>
+          <h3>常规使用</h3>
+          <!--<p class="explain">使用举例: .ag-blue-1; .ag-bg-blue-2; .ag-border-blue-3;</p>-->
+          <!--代码块-->
+          <div class="rx-margin-top-20 rx-relative code-block">
+            <!--复制icon-->
+            <a href="javascript:void(0)" class="icon iconfont icon-fuzhi copy"
+               data-clipboard-demo data-clipboard-action="copy"
+               data-clipboard-target=".font-code-1"></a>
+<pre>
+<code class="font-code-1 css">
+font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+</code>
+</pre>
+          </div>
+          <!--代码块 end -->
+        </div>
+        <!--每段描述-->
+        <div>
+          <h3>WebFont中文字体</h3>
+          <p>建议使用<a href="//iconfont.cn/webfont/">IconFont的在线中文字体</a>进行字体优化(需要登录后才能使用).</p>
         </div>
       </div>
       <!--Icon 图标-->
@@ -439,7 +524,7 @@
         <!--标题-->
         <div class="rx-tit">
           <h2>Icon 图标</h2>
-          <p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>
+          <p>我们不内置图标库, 建议使用<a href="//iconfont.cn/">IconFont</a>管理你的项目图标.</p>
         </div>
       </div>
       <!--Button 按钮-->
@@ -447,7 +532,7 @@
         <!--标题-->
         <div class="rx-tit">
           <h2>Button 按钮</h2>
-          <p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>
+          <!--<p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
         </div>
       </div>
     </div>

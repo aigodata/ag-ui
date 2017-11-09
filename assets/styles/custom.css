@@ -655,6 +655,21 @@ code {
   background: rgba(0,0,0,.05);
 }
 
+
+[ag-click] span.show {
+  display: inline;
+}
+[ag-click] span.hide {
+  display: none;
+}
+
+[ag-click][active] span.show {
+  display: none;
+}
+[ag-click][active] span.hide {
+  display: inline;
+}
+
 [data-clipboard-demo] {
   top: 10px;
   right: 10px;
@@ -768,8 +783,19 @@ code {
   margin-top: 10px;
 }
 
+.color-block {
+  padding: 10px;
+}
+
 .color-block div {
   height: 80px;
-  line-height: 80px;
+  border-radius: 5px;
   color: #fff;
+  padding: 20px 20px;
+}
+
+.color-block div.ag-bg-white {
+  border-width: 1px;
+  border-style: solid;
+  color: #000;
 }

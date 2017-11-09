@@ -1,2 +1,523 @@
 /* 颜色样式 */
 
+/* 红色 */
+
+.ag-red-1 {
+  color: #FF7676;
+}
+
+.ag-bg-red-1 {
+  background-color: #FF7676;
+}
+
+.ag-border-red-1 {
+  border-color: #FF7676;
+}
+
+.ag-red-2 {
+  color: #FF5050;
+}
+
+.ag-bg-red-2 {
+  background-color: #FF5050;
+}
+
+.ag-border-red-2 {
+  border-color: #FF5050;
+}
+
+.ag-red-3 {
+  color: #ED2E2E;
+}
+
+.ag-bg-red-3 {
+  background-color: #ED2E2E;
+}
+
+.ag-border-red-3 {
+  border-color: #ED2E2E;
+}
+
+.ag-red-4 {
+  color: #DE1111;
+}
+
+.ag-bg-red-4 {
+  background-color: #DE1111;
+}
+
+.ag-border-red-4 {
+  border-color: #DE1111;
+}
+
+.ag-red-5 {
+  color: #C50505;
+}
+
+.ag-bg-red-5 {
+  background-color: #C50505;
+}
+
+.ag-border-red-5 {
+  border-color: #C50505;
+}
+
+/* 橙色 */
+
+.ag-orange-1 {
+  color: #FEB57F;
+}
+
+.ag-bg-orange-1 {
+  background-color: #FEB57F;
+}
+
+.ag-border-orange-1 {
+  border-color: #FEB57F;
+}
+
+.ag-orange-2 {
+  color: #FC9F5B;
+}
+
+.ag-bg-orange-2 {
+  background-color: #FC9F5B;
+}
+
+.ag-border-orange-2 {
+  border-color: #FC9F5B;
+}
+
+.ag-orange-3 {
+  color: #FF6B1A;
+}
+
+.ag-bg-orange-3 {
+  background-color: #FF6B1A;
+}
+
+.ag-border-orange-3 {
+  border-color: #FF6B1A;
+}
+
+.ag-orange-4 {
+  color: #E8641B;
+}
+
+.ag-bg-orange-4 {
+  background-color: #E8641B;
+}
+
+.ag-border-orange-4 {
+  border-color: #E8641B;
+}
+
+.ag-orange-5 {
+  color: #CD4A02;
+}
+
+.ag-bg-orange-5 {
+  background-color: #CD4A02;
+}
+
+.ag-border-orange-5 {
+  border-color: #CD4A02;
+}
+
+/* 黄色 */
+
+.ag-yellow-1 {
+  color: #FFCF5D;
+}
+
+.ag-bg-yellow-1 {
+  background-color: #FFCF5D;
+}
+
+.ag-border-yellow-1 {
+  border-color: #FFCF5D;
+}
+
+.ag-yellow-2 {
+  color: #FFC63D;
+}
+
+.ag-bg-yellow-2 {
+  background-color: #FFC63D;
+}
+
+.ag-border-yellow-2 {
+  border-color: #FFC63D;
+}
+
+.ag-yellow-3 {
+  color: #FFB606;
+}
+
+.ag-bg-yellow-3 {
+  background-color: #FFB606;
+}
+
+.ag-border-yellow-3 {
+  border-color: #FFB606;
+}
+
+.ag-yellow-4 {
+  color: #F5AE07;
+}
+
+.ag-bg-yellow-4 {
+  background-color: #F5AE07;
+}
+
+.ag-border-yellow-4 {
+  border-color: #F5AE07;
+}
+
+.ag-yellow-5 {
+  color: #DF9D00;
+}
+
+.ag-bg-yellow-5 {
+  background-color: #DF9D00;
+}
+
+.ag-border-yellow-5 {
+  border-color: #DF9D00;
+}
+
+/* 绿色 */
+
+.ag-green-1 {
+  color: #BFF866;
+}
+
+.ag-bg-green-1 {
+  background-color: #BFF866;
+}
+
+.ag-border-green-1 {
+  border-color: #BFF866;
+}
+
+.ag-green-2 {
+  color: #B9EB40;
+}
+
+.ag-bg-green-2 {
+  background-color: #B9EB40;
+}
+
+.ag-border-green-2 {
+  border-color: #B9EB40;
+}
+
+.ag-green-3 {
+  color: #A0D521;
+}
+
+.ag-bg-green-3 {
+  background-color: #A0D521;
+}
+
+.ag-border-green-3 {
+  border-color: #A0D521;
+}
+
+.ag-green-4 {
+  color: #8EC30E;
+}
+
+.ag-bg-green-4 {
+  background-color: #8EC30E;
+}
+
+.ag-border-green-4 {
+  border-color: #8EC30E;
+}
+
+.ag-green-5 {
+  color: #79AA04;
+}
+
+.ag-bg-green-5 {
+  background-color: #79AA04;
+}
+
+.ag-border-green-5 {
+  border-color: #79AA04;
+}
+
+/* 青色 */
+
+.ag-cyan-1 {
+  color: #85F9FD;
+}
+
+.ag-bg-cyan-1 {
+  background-color: #85F9FD;
+}
+
+.ag-border-cyan-1 {
+  border-color: #85F9FD;
+}
+
+.ag-cyan-2 {
+  color: #61F0F5;
+}
+
+.ag-bg-cyan-2 {
+  background-color: #61F0F5;
+}
+
+.ag-border-cyan-2 {
+  border-color: #61F0F5;
+}
+
+.ag-cyan-3 {
+  color: #1DDAE1;
+}
+
+.ag-bg-cyan-3 {
+  background-color: #1DDAE1;
+}
+
+.ag-border-cyan-3 {
+  border-color: #1DDAE1;
+}
+
+.ag-cyan-4 {
+  color: #19C7CD;
+}
+
+.ag-bg-cyan-4 {
+  background-color: #19C7CD;
+}
+
+.ag-border-cyan-4 {
+  border-color: #19C7CD;
+}
+
+.ag-cyan-5 {
+  color: #08B3B9;
+}
+
+.ag-bg-cyan-5 {
+  background-color: #08B3B9;
+}
+
+.ag-border-cyan-5 {
+  border-color: #08B3B9;
+}
+
+/* 蓝色 */
+
+.ag-blue-1 {
+  color: #83CBFF;
+}
+
+.ag-bg-blue-1 {
+  background-color: #83CBFF;
+}
+
+.ag-border-blue-1 {
+  border-color: #83CBFF;
+}
+
+.ag-blue-2 {
+  color: #5CBBFF;
+}
+
+.ag-bg-blue-2 {
+  background-color: #5CBBFF;
+}
+
+.ag-border-blue-2 {
+  border-color: #5CBBFF;
+}
+
+.ag-blue-3 {
+  color: #30A8FF;
+}
+
+.ag-bg-blue-3 {
+  background-color: #30A8FF;
+}
+
+.ag-border-blue-3 {
+  border-color: #30A8FF;
+}
+
+.ag-blue-4 {
+  color: #0A8BE8;
+}
+
+.ag-bg-blue-4 {
+  background-color: #0A8BE8;
+}
+
+.ag-border-blue-4 {
+  border-color: #0A8BE8;
+}
+
+.ag-blue-5 {
+  color: #0770D2;
+}
+
+.ag-bg-blue-5 {
+  background-color: #0770D2;
+}
+
+.ag-border-blue-5 {
+  border-color: #0770D2;
+}
+
+/* 紫色 */
+
+.ag-purple-1 {
+  color: #D5BAFB;
+}
+
+.ag-bg-purple-1 {
+  background-color: #D5BAFB;
+}
+
+.ag-border-purple-1 {
+  border-color: #D5BAFB;
+}
+
+.ag-purple-2 {
+  color: #BA8FF8;
+}
+
+.ag-bg-purple-2 {
+  background-color: #BA8FF8;
+}
+
+.ag-border-purple-2 {
+  border-color: #BA8FF8;
+}
+
+.ag-purple-3 {
+  color: #9E62F6;
+}
+
+.ag-bg-purple-3 {
+  background-color: #9E62F6;
+}
+
+.ag-border-purple-3 {
+  border-color: #9E62F6;
+}
+
+.ag-purple-4 {
+  color: #863EEF;
+}
+
+.ag-bg-purple-4 {
+  background-color: #863EEF;
+}
+
+.ag-border-purple-4 {
+  border-color: #863EEF;
+}
+
+.ag-purple-5 {
+  color: #6A12EB;
+}
+
+.ag-bg-purple-5 {
+  background-color: #6A12EB;
+}
+
+.ag-border-purple-5 {
+  border-color: #6A12EB;
+}
+
+/* 灰色 */
+
+.ag-gray-1 {
+  color: #E7E7E7;
+}
+
+.ag-bg-gray-1 {
+  background-color: #E7E7E7;
+}
+
+.ag-border-gray-1 {
+  border-color: #E7E7E7;
+}
+
+.ag-gray-2 {
+  color: #E0E0E0;
+}
+
+.ag-bg-gray-2 {
+  background-color: #E0E0E0;
+}
+
+.ag-border-gray-2 {
+  border-color: #E0E0E0;
+}
+
+.ag-gray-3 {
+  color: #999999;
+}
+
+.ag-bg-gray-3 {
+  background-color: #999999;
+}
+
+.ag-border-gray-3 {
+  border-color: #999999;
+}
+
+.ag-gray-4 {
+  color: #666666;
+}
+
+.ag-bg-gray-4 {
+  background-color: #666666;
+}
+
+.ag-border-gray-4 {
+  border-color: #666666;
+}
+
+.ag-gray-5 {
+  color: #333333;
+}
+
+.ag-bg-gray-5 {
+  background-color: #333333;
+}
+
+.ag-border-gray-5 {
+  border-color: #333333;
+}
+
+/* 白色 */
+.ag-white {
+  color: #fff;
+}
+
+.ag-bg-white {
+  background-color: #fff;
+}
+
+.ag-border-white {
+  border-color: #fff;
+}
+
+/* 黑色 */
+.ag-black {
+  color: #000;
+}
+
+.ag-bg-black {
+  background-color: #000;
+}
+
+.ag-border-black {
+  border-color: #000;
+}
