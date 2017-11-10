@@ -321,6 +321,10 @@ p.explain {
   border-radius: 5px;
 }
 
+.rx-demo-layout .code-example-wrap {
+  padding: 10px 0;
+}
+
 .rx-demo-layout .example-wrap .code-block{
   display: none;
 }
@@ -696,6 +700,10 @@ code {
   display: block !important;
 }
 
+.code-block[active] {
+  display: block !important;
+}
+
 .layout {
   padding: 10px;
 }
@@ -798,4 +806,29 @@ code {
   border-width: 1px;
   border-style: solid;
   color: #000;
+}
+
+.button-wrap {
+  padding: 10px;
+}
+.button-wrap .ag-button {
+  margin: 0 10px;
+}
+
+.ag-button.bg-blue.hover {
+  background-color: #5CBBFF;
+  border-color: #5CBBFF;
+}
+
+.ag-button.bg-blue.active {
+  background-color: #0A8BE8;
+  border-color: #0A8BE8;
+}
+
+.ag-button-group {
+  margin-left: 10px;
+}
+
+.ag-button-group .ag-button {
+  padding: 5px 10px;
 }

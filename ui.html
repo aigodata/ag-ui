@@ -13,9 +13,10 @@
   <link rel="stylesheet" type="text/css" href="../assets/styles/custom.css">
   <!-- 样式 -->
   <link rel="stylesheet" type="text/css" href="../src/base.css">
-  <link rel="stylesheet" type="text/css" href="../src/font.css">
-  <link rel="stylesheet" type="text/css" href="../src/color.css">
   <link rel="stylesheet" type="text/css" href="../src/layout.css">
+  <link rel="stylesheet" type="text/css" href="../src/font.css">
+  <link rel="stylesheet" type="text/css" href="../src/button.css">
+  <link rel="stylesheet" type="text/css" href="../src/color.css">
 </head>
 <body>
 <!--外层-->
@@ -147,8 +148,6 @@
                    data-clipboard-target=".layout-code-1">
                   <i class="icon iconfont icon-fuzhi"></i>
                 </a>
-                <!--收起-->
-                <a href="javascript:void(0)" class="icon iconfont icon-2 up" ag-click remove target="layout-code-1"></a>
                 <pre class="rx-border-top">
                   <code class="rx-clear-radius layout-code-1 css html">
 &lt;style&gt;
@@ -241,8 +240,6 @@
                    data-clipboard-target=".layout-code-2">
                   <i class="icon iconfont icon-fuzhi"></i>
                 </a>
-                <!--收起-->
-                <a href="javascript:void(0)" class="icon iconfont icon-2 up" ag-click remove target="layout-code-2"></a>
                 <pre class="rx-border-top">
                   <code class="rx-clear-radius layout-code-2 css html">
 &lt;style&gt;
@@ -343,8 +340,6 @@
                    data-clipboard-target=".layout-code-3">
                   <i class="icon iconfont icon-fuzhi"></i>
                 </a>
-                <!--收起-->
-                <a href="javascript:void(0)" class="icon iconfont icon-2 up" ag-click remove target="layout-code-3"></a>
                 <pre class="rx-border-top">
                   <code class="rx-clear-radius layout-code-3 css html">
 &lt;style&gt;
@@ -430,7 +425,7 @@
               <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-red-2">red-2</div></div>
               <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-red-3">red-3</div></div>
               <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-red-4">red-4</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-red-5 ag-white">red-5</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-red-5">red-5</div></div>
             </div>
             <div class="ag-layout">
               <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-orange-1">orange-1</div></div>
@@ -478,8 +473,8 @@
               <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-1">gray-1</div></div>
               <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-2">gray-2</div></div>
               <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-3">gray-3</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-4 ag-white">gray-4</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-5 ag-white">gray-5</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-4">gray-4</div></div>
+              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-5">gray-5</div></div>
             </div>
             <div class="ag-layout">
               <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-white ag-black ag-border-gray-1">white</div></div>
@@ -533,6 +528,193 @@ font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Micros
         <div class="rx-tit">
           <h2>Button 按钮</h2>
           <!--<p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
+        </div>
+        <!--每个条目 -- button-1 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <p class="explain">因牵扯到伪类情况, 仅内置了6种颜色: red orange yellow green blue gray, 例: red, bg-red, border-red </p>
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="button-wrap">
+                  <button class="ag-button bg-red ag-white">红色按钮</button>
+                  <button class="ag-button bg-orange ag-white">橙色按钮</button>
+                  <button class="ag-button bg-yellow ag-white">黄色按钮</button>
+                  <button class="ag-button bg-green ag-white">绿色按钮</button>
+                  <button class="ag-button bg-blue ag-white">蓝色按钮</button>
+                  <button class="ag-button bg-gray ag-white">灰色按钮</button>
+                </div>
+                <div class="button-wrap">
+                  <button class="ag-button border-red ag-red-3">红色按钮</button>
+                  <button class="ag-button border-orange ag-orange-3">橙色按钮</button>
+                  <button class="ag-button border-yellow ag-yellow-3">黄色按钮</button>
+                  <button class="ag-button border-green ag-green-3">绿色按钮</button>
+                  <button class="ag-button border-blue ag-blue-3">蓝色按钮</button>
+                  <button class="ag-button border-gray ag-gray-3">灰色按钮</button>
+                </div>
+                <div class="button-wrap">
+                  <button class="ag-button text red">红色按钮</button>
+                  <button class="ag-button text orange">橙色按钮</button>
+                  <button class="ag-button text yellow">黄色按钮</button>
+                  <button class="ag-button text green">绿色按钮</button>
+                  <button class="ag-button text blue">蓝色按钮</button>
+                  <button class="ag-button text gray">灰色按钮</button>
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" button-code-1>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".button-code-1">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius button-code-1 css html">
+
+&lt;div class=&quot;button-wrap&quot;&gt;
+  &lt;button class=&quot;ag-button bg-red ag-white&quot;&gt;红色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-orange ag-white&quot;&gt;橙色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-yellow ag-white&quot;&gt;黄色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-green ag-white&quot;&gt;绿色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-blue ag-white&quot;&gt;蓝色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-gray ag-white&quot;&gt;灰色按钮&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;button-wrap&quot;&gt;
+  &lt;button class=&quot;ag-button border-red ag-red-3&quot;&gt;红色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-orange ag-orange-3&quot;&gt;橙色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-yellow ag-yellow-3&quot;&gt;黄色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-green ag-green-3&quot;&gt;绿色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-blue ag-blue-3&quot;&gt;蓝色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-gray ag-gray-3&quot;&gt;灰色按钮&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;button-wrap&quot;&gt;
+  &lt;button class=&quot;ag-button text red&quot;&gt;红色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text orange&quot;&gt;橙色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text yellow&quot;&gt;黄色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text green&quot;&gt;绿色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text blue&quot;&gt;蓝色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text gray&quot;&gt;灰色按钮&lt;/button&gt;
+&lt;/div&gt;
+
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="button-code-1">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--每个条目 -- button-2 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <p class="explain">提供4种状态: normal hover active disabled</p>
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="button-wrap">
+                  <a class="ag-button bg-blue ag-white">normal</a>
+                  <a class="ag-button bg-blue hover ag-white">hover</a>
+                  <a class="ag-button bg-blue active ag-white">active</a>
+                  <a class="ag-button bg-blue disabled ag-white">disabled</a>
+                  <a class="ag-button text blue disabled">disabled</a>
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" button-code-2>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".button-code-2">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius button-code-2 css html">
+
+&lt;div class=&quot;button-wrap&quot;&gt;
+  &lt;a class=&quot;ag-button bg-blue ag-white&quot;&gt;normal&lt;/a&gt;
+  &lt;a class=&quot;ag-button bg-blue hover ag-white&quot;&gt;hover&lt;/a&gt;
+  &lt;a class=&quot;ag-button bg-blue active ag-white&quot;&gt;active&lt;/a&gt;
+  &lt;a class=&quot;ag-button bg-blue disabled ag-white&quot;&gt;disabled&lt;/a&gt;
+  &lt;a class=&quot;ag-button text blue disabled&quot;&gt;disabled&lt;/a&gt;
+&lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="button-code-2">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--每个条目 -- button-3 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <p class="explain">支持iconfont图标, 圆角, 按钮组</p>
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="button-wrap">
+                  <a class="ag-button bg-blue ag-white"><i class="icon iconfont icon-sousuo"></i></a>
+                  <a class="ag-button bg-blue ag-white">搜索</a>
+                  <a class="ag-button bg-blue ag-white"><i class="icon iconfont icon-sousuo"></i><span>搜索</span></a>
+                  <a class="ag-button round bg-blue ag-white"><i class="icon iconfont icon-sousuo"></i><span>搜索</span></a>
+                </div>
+                <div class="button-wrap">
+                  <div class="ag-button-group">
+                    <button class="ag-button bg-blue ag-white"><i class="icon iconfont icon-sousuo"></i></button>
+                    <button class="ag-button bg-blue ag-white"><i class="icon iconfont icon-compile"></i></button>
+                    <button class="ag-button bg-blue ag-white"><i class="icon iconfont icon-gerenyetianjiajiaguanzhu"></i></button>
+                  </div>
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" button-code-3>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".button-code-3">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius button-code-3 css html">
+&lt;div class=&quot;button-wrap&quot;&gt;
+  &lt;a class=&quot;ag-button bg-blue ag-white&quot;&gt;&lt;i class=&quot;icon iconfont icon-sousuo&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;a class=&quot;ag-button bg-blue ag-white&quot;&gt;搜索&lt;/a&gt;
+  &lt;a class=&quot;ag-button bg-blue ag-white&quot;&gt;&lt;i class=&quot;icon iconfont icon-sousuo&quot;&gt;&lt;/i&gt;&lt;span&gt;搜索&lt;/span&gt;&lt;/a&gt;
+  &lt;a class=&quot;ag-button round bg-blue ag-white&quot;&gt;&lt;i class=&quot;icon iconfont icon-sousuo&quot;&gt;&lt;/i&gt;&lt;span&gt;搜索&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;button-wrap&quot;&gt;
+  &lt;div class=&quot;ag-button-group&quot;&gt;
+    &lt;button class=&quot;ag-button bg-blue ag-white&quot;&gt;&lt;i class=&quot;icon iconfont icon-sousuo&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class=&quot;ag-button bg-blue ag-white&quot;&gt;&lt;i class=&quot;icon iconfont icon-compile&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class=&quot;ag-button bg-blue ag-white&quot;&gt;&lt;i class=&quot;icon iconfont icon-gerenyetianjiajiaguanzhu&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="button-code-3">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
