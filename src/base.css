@@ -12,6 +12,10 @@
   clear: both;
 }
 
+.ag-hide {
+  display: none;
+}
+
 .ag-relative {
   position: relative;
 }

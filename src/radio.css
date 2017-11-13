@@ -1,0 +1,56 @@
+/* 单选按钮 */
+.ag-radio {
+  display: none;
+}
+.ag-radio-label {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.ag-radio-label:before,
+.ag-radio-label:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  transform: translate(0,-50%);
+  border-radius: 50%;
+}
+/* 未选中 */
+input.ag-radio[type=radio]:not(:checked) + label.ag-radio-label:after {
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+}
+/* 选中 */
+input.ag-radio[type=radio]:checked + label.ag-radio-label:after {
+  padding: 0;
+  background: #fff;
+  border: 6px solid #30A8FF;
+}
+
+/* 禁用 */
+input.ag-radio[type=radio]:disabled + label.ag-radio-label {
+  cursor: not-allowed;
+}
+
+/* 禁用未选中 */
+input.ag-radio[type=radio]:disabled:not(:checked) + label.ag-radio-label:after {
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+/* 禁用选中 */
+input.ag-radio[type=radio]:disabled:checked + label.ag-radio-label:before {
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  z-index: 2;
+}
+input.ag-radio[type=radio]:disabled:checked + label.ag-radio-label:after {
+  padding: 0;
+  background: #9f9f9f;
+  border: 6px solid #fff;
+  z-index: 1;
+}

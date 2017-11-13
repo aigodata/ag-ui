@@ -17,6 +17,10 @@
   <link rel="stylesheet" type="text/css" href="../src/color.css">
   <link rel="stylesheet" type="text/css" href="../src/layout.css">
   <link rel="stylesheet" type="text/css" href="../src/button.css">
+  <link rel="stylesheet" type="text/css" href="../src/radio.css">
+  <!--<link rel="stylesheet" type="text/css" href="../src/checkbox.css">-->
+  <!--<link rel="stylesheet" type="text/css" href="../src/input.css">-->
+  <!--<link rel="stylesheet" type="text/css" href="../src/textarea.css">-->
 </head>
 <body>
 <!--外层-->
@@ -47,6 +51,18 @@
         <li>
           <a href="#button">Button 按钮</a>
         </li>
+        <li>
+          <a href="#radio">Radio 单选按钮</a>
+        </li>
+        <li>
+          <a href="#checkbox">Checkbox 多选按钮</a>
+        </li>
+        <li>
+          <a href="#input">Input 文本框</a>
+        </li>
+        <li>
+          <a href="#textarea">Textarea 文本域</a>
+        </li>
       </ul>
     </div>
     <!--右侧-->
@@ -62,7 +78,7 @@
         <!--每段描述-->
         <div>
           <h3>自我介绍</h3>
-          <p>ag-ui是一套基于CSS的UI, 只求简简单单.</p>
+          <p>ag-ui是一套主要依靠CSS的UI框架, 只求简单易用</p>
         </div>
         <!--每段描述-->
         <div>
@@ -89,7 +105,7 @@
             <a href="javascript:void(0)" class="icon iconfont icon-fuzhi copy"
                data-clipboard-demo data-clipboard-action="copy"
                data-clipboard-target=".start-code-1"></a>
-<pre>
+            <pre>
 <code class="start-code-1 html">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -421,64 +437,148 @@
           <!--页面配色-->
           <div class="rx-colour">
             <div class="ag-layout">
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-red-1">red-1</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-red-2">red-2</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-red-3">red-3</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-red-4">red-4</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-red-5">red-5</div></div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-red-1">red-1</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-red-2">red-2</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-red-3">red-3</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-red-4">red-4</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-red-5">red-5</div>
+              </div>
             </div>
             <div class="ag-layout">
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-orange-1">orange-1</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-orange-2">orange-2</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-orange-3">orange-3</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-orange-4">orange-4</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-orange-5">orange-5</div></div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-orange-1">orange-1</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-orange-2">orange-2</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-orange-3">orange-3</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-orange-4">orange-4</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-orange-5">orange-5</div>
+              </div>
             </div>
             <div class="ag-layout">
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-yellow-1">yellow-1</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-yellow-2">yellow-2</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-yellow-3">yellow-3</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-yellow-4">yellow-4</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-yellow-5">yellow-5</div></div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-yellow-1">yellow-1</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-yellow-2">yellow-2</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-yellow-3">yellow-3</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-yellow-4">yellow-4</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-yellow-5">yellow-5</div>
+              </div>
             </div>
             <div class="ag-layout">
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-green-1">green-1</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-green-2">green-2</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-green-3">green-3</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-green-4">green-4</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-green-5">green-5</div></div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-green-1">green-1</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-green-2">green-2</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-green-3">green-3</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-green-4">green-4</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-green-5">green-5</div>
+              </div>
             </div>
             <div class="ag-layout">
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-cyan-1">cyan-1</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-cyan-2">cyan-2</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-cyan-3">cyan-3</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-cyan-4">cyan-4</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-cyan-5">cyan-5</div></div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-cyan-1">cyan-1</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-cyan-2">cyan-2</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-cyan-3">cyan-3</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-cyan-4">cyan-4</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-cyan-5">cyan-5</div>
+              </div>
             </div>
             <div class="ag-layout">
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-blue-1">blue-1</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-blue-2">blue-2</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-blue-3">blue-3</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-blue-4">blue-4</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-blue-5">blue-5</div></div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-blue-1">blue-1</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-blue-2">blue-2</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-blue-3">blue-3</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-blue-4">blue-4</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-blue-5">blue-5</div>
+              </div>
             </div>
             <div class="ag-layout">
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-purple-1">purple-1</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-purple-2">purple-2</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-purple-3">purple-3</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-purple-4">purple-4</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-purple-5">purple-5</div></div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-purple-1">purple-1</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-purple-2">purple-2</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-purple-3">purple-3</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-purple-4">purple-4</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-purple-5">purple-5</div>
+              </div>
             </div>
             <div class="ag-layout">
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-1">gray-1</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-2">gray-2</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-3">gray-3</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-4">gray-4</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-gray-5">gray-5</div></div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-gray-1">gray-1</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-gray-2">gray-2</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-gray-3">gray-3</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-gray-4">gray-4</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-gray-5">gray-5</div>
+              </div>
             </div>
             <div class="ag-layout">
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-white ag-black ag-border-gray-1">white</div></div>
-              <div class="ag-text-left ag-grow-auto color-block"><div class="ag-bg-black ag-white">black</div></div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-white ag-black ag-border-gray-1">white</div>
+              </div>
+              <div class="ag-text-left ag-grow-auto color-block">
+                <div class="ag-bg-black ag-white">black</div>
+              </div>
             </div>
           </div>
         </div>
@@ -500,7 +600,7 @@
             <a href="javascript:void(0)" class="icon iconfont icon-fuzhi copy"
                data-clipboard-demo data-clipboard-action="copy"
                data-clipboard-target=".font-code-1"></a>
-<pre>
+            <pre>
 <code class="font-code-1 css">
 font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 </code>
@@ -672,13 +772,15 @@ font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Micros
                   <a class="ag-button bg-blue ag-white"><i class="icon iconfont icon-sousuo"></i></a>
                   <a class="ag-button bg-blue ag-white">搜索</a>
                   <a class="ag-button bg-blue ag-white"><i class="icon iconfont icon-sousuo"></i><span>搜索</span></a>
-                  <a class="ag-button round bg-blue ag-white"><i class="icon iconfont icon-sousuo"></i><span>搜索</span></a>
+                  <a class="ag-button round bg-blue ag-white"><i
+                    class="icon iconfont icon-sousuo"></i><span>搜索</span></a>
                 </div>
                 <div class="button-wrap">
                   <div class="ag-button-group">
                     <button class="ag-button bg-blue ag-white"><i class="icon iconfont icon-sousuo"></i></button>
                     <button class="ag-button bg-blue ag-white"><i class="icon iconfont icon-compile"></i></button>
-                    <button class="ag-button bg-blue ag-white"><i class="icon iconfont icon-gerenyetianjiajiaguanzhu"></i></button>
+                    <button class="ag-button bg-blue ag-white"><i
+                      class="icon iconfont icon-gerenyetianjiajiaguanzhu"></i></button>
                   </div>
                 </div>
               </div>
@@ -710,6 +812,352 @@ font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Micros
               </div>
               <!--按钮-->
               <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="button-code-3">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- radio -->
+      <div id="radio" class="rx-each-item">
+        <!--标题-->
+        <div class="rx-tit">
+          <h2>Radio 单选按钮</h2>
+          <!--<p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
+        </div>
+        <!--每个条目 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <p class="explain">仅支持label在radio后面的展示方式.</p>
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+
+                <div class="component-wrap radio">
+                  <input type="radio" name="radio" id="radio-checked" checked="checked" class="ag-radio">
+                  <label for="radio-checked" class="ag-radio-label">选中状态</label>
+
+                  <input type="radio" name="radio" id="radio-no-checked" class="ag-radio">
+                  <label for="radio-no-checked" class="ag-radio-label">未选中状态</label>
+
+                  <input type="radio" name="radio" id="radio-no-checked2" class="ag-radio">
+                  <label for="radio-no-checked2" class="ag-radio-label">未选中状态</label>
+
+                  <input type="radio" name="radio4" id="radio-disabled-checked" class="ag-radio" checked disabled>
+                  <label for="radio-disabled-checked" class="ag-radio-label">禁用选中状态</label>
+
+                  <input type="radio" name="radio5" id="radio-disabled-no-checked" class="ag-radio" disabled>
+                  <label for="radio-disabled-no-checked" class="ag-radio-label">禁用未选中状态</label>
+                </div>
+
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" radio-code-1>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".radio-code-1">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius radio-code-1 css html">
+
+&lt;div class=&quot;component-wrap radio&quot;&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;radio&quot; id=&quot;radio-checked&quot; checked=&quot;checked&quot; class=&quot;ag-radio&quot;&gt;
+  &lt;label for=&quot;radio-checked&quot; class=&quot;ag-radio-label&quot;&gt;选中状态&lt;/label&gt;
+
+  &lt;input type=&quot;radio&quot; name=&quot;radio&quot; id=&quot;radio-no-checked&quot; class=&quot;ag-radio&quot;&gt;
+  &lt;label for=&quot;radio-no-checked&quot; class=&quot;ag-radio-label&quot;&gt;未选中状态&lt;/label&gt;
+
+  &lt;input type=&quot;radio&quot; name=&quot;radio&quot; id=&quot;radio-no-checked2&quot; class=&quot;ag-radio&quot;&gt;
+  &lt;label for=&quot;radio-no-checked2&quot; class=&quot;ag-radio-label&quot;&gt;未选中状态&lt;/label&gt;
+
+  &lt;input type=&quot;radio&quot; name=&quot;radio4&quot; id=&quot;radio-disabled-checked&quot; class=&quot;ag-radio&quot; checked disabled&gt;
+  &lt;label for=&quot;radio-disabled-checked&quot; class=&quot;ag-radio-label&quot;&gt;禁用选中状态&lt;/label&gt;
+
+  &lt;input type=&quot;radio&quot; name=&quot;radio5&quot; id=&quot;radio-disabled-no-checked&quot; class=&quot;ag-radio&quot; disabled&gt;
+  &lt;label for=&quot;radio-disabled-no-checked&quot; class=&quot;ag-radio-label&quot;&gt;禁用未选中状态&lt;/label&gt;
+&lt;/div&gt;
+
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="radio-code-1">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- checkbox -->
+      <div id="checkbox" class="rx-each-item">
+        <!--标题-->
+        <div class="rx-tit">
+          <h2>Checkbox 多选按钮</h2>
+          <!--<p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
+        </div>
+        <!--每个条目 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <p class="explain">因牵扯到伪类情况, 仅内置了6种颜色: red orange yellow green blue gray, 例: red, bg-red, border-red </p>
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="button-wrap">
+                  <button class="ag-button bg-red ag-white">红色按钮</button>
+                  <button class="ag-button bg-orange ag-white">橙色按钮</button>
+                  <button class="ag-button bg-yellow ag-white">黄色按钮</button>
+                  <button class="ag-button bg-green ag-white">绿色按钮</button>
+                  <button class="ag-button bg-blue ag-white">蓝色按钮</button>
+                  <button class="ag-button bg-gray ag-white">灰色按钮</button>
+                </div>
+                <div class="button-wrap">
+                  <button class="ag-button border-red ag-red-3">红色按钮</button>
+                  <button class="ag-button border-orange ag-orange-3">橙色按钮</button>
+                  <button class="ag-button border-yellow ag-yellow-3">黄色按钮</button>
+                  <button class="ag-button border-green ag-green-3">绿色按钮</button>
+                  <button class="ag-button border-blue ag-blue-3">蓝色按钮</button>
+                  <button class="ag-button border-gray ag-gray-3">灰色按钮</button>
+                </div>
+                <div class="button-wrap">
+                  <button class="ag-button text red">红色按钮</button>
+                  <button class="ag-button text orange">橙色按钮</button>
+                  <button class="ag-button text yellow">黄色按钮</button>
+                  <button class="ag-button text green">绿色按钮</button>
+                  <button class="ag-button text blue">蓝色按钮</button>
+                  <button class="ag-button text gray">灰色按钮</button>
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" button-code-1>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".button-code-1">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius button-code-1 css html">
+
+&lt;div class=&quot;button-wrap&quot;&gt;
+  &lt;button class=&quot;ag-button bg-red ag-white&quot;&gt;红色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-orange ag-white&quot;&gt;橙色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-yellow ag-white&quot;&gt;黄色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-green ag-white&quot;&gt;绿色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-blue ag-white&quot;&gt;蓝色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-gray ag-white&quot;&gt;灰色按钮&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;button-wrap&quot;&gt;
+  &lt;button class=&quot;ag-button border-red ag-red-3&quot;&gt;红色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-orange ag-orange-3&quot;&gt;橙色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-yellow ag-yellow-3&quot;&gt;黄色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-green ag-green-3&quot;&gt;绿色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-blue ag-blue-3&quot;&gt;蓝色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-gray ag-gray-3&quot;&gt;灰色按钮&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;button-wrap&quot;&gt;
+  &lt;button class=&quot;ag-button text red&quot;&gt;红色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text orange&quot;&gt;橙色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text yellow&quot;&gt;黄色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text green&quot;&gt;绿色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text blue&quot;&gt;蓝色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text gray&quot;&gt;灰色按钮&lt;/button&gt;
+&lt;/div&gt;
+
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="button-code-1">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- input -->
+      <div id="input" class="rx-each-item">
+        <!--标题-->
+        <div class="rx-tit">
+          <h2>Input 文本框</h2>
+          <!--<p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
+        </div>
+        <!--每个条目 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <p class="explain">因牵扯到伪类情况, 仅内置了6种颜色: red orange yellow green blue gray, 例: red, bg-red, border-red </p>
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="button-wrap">
+                  <button class="ag-button bg-red ag-white">红色按钮</button>
+                  <button class="ag-button bg-orange ag-white">橙色按钮</button>
+                  <button class="ag-button bg-yellow ag-white">黄色按钮</button>
+                  <button class="ag-button bg-green ag-white">绿色按钮</button>
+                  <button class="ag-button bg-blue ag-white">蓝色按钮</button>
+                  <button class="ag-button bg-gray ag-white">灰色按钮</button>
+                </div>
+                <div class="button-wrap">
+                  <button class="ag-button border-red ag-red-3">红色按钮</button>
+                  <button class="ag-button border-orange ag-orange-3">橙色按钮</button>
+                  <button class="ag-button border-yellow ag-yellow-3">黄色按钮</button>
+                  <button class="ag-button border-green ag-green-3">绿色按钮</button>
+                  <button class="ag-button border-blue ag-blue-3">蓝色按钮</button>
+                  <button class="ag-button border-gray ag-gray-3">灰色按钮</button>
+                </div>
+                <div class="button-wrap">
+                  <button class="ag-button text red">红色按钮</button>
+                  <button class="ag-button text orange">橙色按钮</button>
+                  <button class="ag-button text yellow">黄色按钮</button>
+                  <button class="ag-button text green">绿色按钮</button>
+                  <button class="ag-button text blue">蓝色按钮</button>
+                  <button class="ag-button text gray">灰色按钮</button>
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" button-code-1>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".button-code-1">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius button-code-1 css html">
+
+&lt;div class=&quot;button-wrap&quot;&gt;
+  &lt;button class=&quot;ag-button bg-red ag-white&quot;&gt;红色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-orange ag-white&quot;&gt;橙色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-yellow ag-white&quot;&gt;黄色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-green ag-white&quot;&gt;绿色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-blue ag-white&quot;&gt;蓝色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-gray ag-white&quot;&gt;灰色按钮&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;button-wrap&quot;&gt;
+  &lt;button class=&quot;ag-button border-red ag-red-3&quot;&gt;红色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-orange ag-orange-3&quot;&gt;橙色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-yellow ag-yellow-3&quot;&gt;黄色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-green ag-green-3&quot;&gt;绿色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-blue ag-blue-3&quot;&gt;蓝色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-gray ag-gray-3&quot;&gt;灰色按钮&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;button-wrap&quot;&gt;
+  &lt;button class=&quot;ag-button text red&quot;&gt;红色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text orange&quot;&gt;橙色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text yellow&quot;&gt;黄色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text green&quot;&gt;绿色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text blue&quot;&gt;蓝色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text gray&quot;&gt;灰色按钮&lt;/button&gt;
+&lt;/div&gt;
+
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="button-code-1">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- textarea -->
+      <div id="textarea" class="rx-each-item">
+        <!--标题-->
+        <div class="rx-tit">
+          <h2>Textarea 文本域</h2>
+          <!--<p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
+        </div>
+        <!--每个条目 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <p class="explain">因牵扯到伪类情况, 仅内置了6种颜色: red orange yellow green blue gray, 例: red, bg-red, border-red </p>
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="button-wrap">
+                  <button class="ag-button bg-red ag-white">红色按钮</button>
+                  <button class="ag-button bg-orange ag-white">橙色按钮</button>
+                  <button class="ag-button bg-yellow ag-white">黄色按钮</button>
+                  <button class="ag-button bg-green ag-white">绿色按钮</button>
+                  <button class="ag-button bg-blue ag-white">蓝色按钮</button>
+                  <button class="ag-button bg-gray ag-white">灰色按钮</button>
+                </div>
+                <div class="button-wrap">
+                  <button class="ag-button border-red ag-red-3">红色按钮</button>
+                  <button class="ag-button border-orange ag-orange-3">橙色按钮</button>
+                  <button class="ag-button border-yellow ag-yellow-3">黄色按钮</button>
+                  <button class="ag-button border-green ag-green-3">绿色按钮</button>
+                  <button class="ag-button border-blue ag-blue-3">蓝色按钮</button>
+                  <button class="ag-button border-gray ag-gray-3">灰色按钮</button>
+                </div>
+                <div class="button-wrap">
+                  <button class="ag-button text red">红色按钮</button>
+                  <button class="ag-button text orange">橙色按钮</button>
+                  <button class="ag-button text yellow">黄色按钮</button>
+                  <button class="ag-button text green">绿色按钮</button>
+                  <button class="ag-button text blue">蓝色按钮</button>
+                  <button class="ag-button text gray">灰色按钮</button>
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" button-code-1>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".button-code-1">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius button-code-1 css html">
+
+&lt;div class=&quot;button-wrap&quot;&gt;
+  &lt;button class=&quot;ag-button bg-red ag-white&quot;&gt;红色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-orange ag-white&quot;&gt;橙色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-yellow ag-white&quot;&gt;黄色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-green ag-white&quot;&gt;绿色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-blue ag-white&quot;&gt;蓝色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button bg-gray ag-white&quot;&gt;灰色按钮&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;button-wrap&quot;&gt;
+  &lt;button class=&quot;ag-button border-red ag-red-3&quot;&gt;红色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-orange ag-orange-3&quot;&gt;橙色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-yellow ag-yellow-3&quot;&gt;黄色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-green ag-green-3&quot;&gt;绿色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-blue ag-blue-3&quot;&gt;蓝色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button border-gray ag-gray-3&quot;&gt;灰色按钮&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;button-wrap&quot;&gt;
+  &lt;button class=&quot;ag-button text red&quot;&gt;红色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text orange&quot;&gt;橙色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text yellow&quot;&gt;黄色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text green&quot;&gt;绿色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text blue&quot;&gt;蓝色按钮&lt;/button&gt;
+  &lt;button class=&quot;ag-button text gray&quot;&gt;灰色按钮&lt;/button&gt;
+&lt;/div&gt;
+
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="button-code-1">
                 <span class="show">显示代码</span>
                 <span class="hide">隐藏代码</span>
               </a>
