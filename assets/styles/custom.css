@@ -232,8 +232,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 32px;
 }
 
-.rx-visual .rx-sidebar ul li[ag-click]:hover,
-.rx-visual .rx-sidebar ul li[ag-click][active] {
+.rx-visual .rx-sidebar ul li a:hover {
   color: #50aff2;
 }
 
