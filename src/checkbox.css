@@ -1,2 +1,71 @@
 /* 复选框样式 */
 
+.ag-checkbox {
+  display: none;
+}
+.ag-checkbox-label {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.ag-checkbox-label:before {
+  content: '';
+  position: absolute;
+  top: 49%;
+  left: 1px;
+  width: 4px;
+  height: 8px;
+  z-index: 1;
+  border-radius: 0;
+}
+.ag-checkbox-label:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  transform: translate(0,-50%);
+  border-radius: 3px;
+}
+
+/* 未选中 */
+input.ag-checkbox[type=checkbox]:not(:checked) + label.ag-checkbox-label:after {
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+}
+/* 选中 */
+input.ag-checkbox[type=checkbox]:checked + label.ag-checkbox-label::before {
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: translate(0,-50%) rotateZ(45deg);
+  transform-origin: 100% 100%;
+}
+input.ag-checkbox[type=checkbox]:checked + label.ag-checkbox-label:after {
+  padding: 0;
+  background: #30A8FF;
+}
+
+/* 禁用 */
+input.ag-checkbox[type=checkbox]:disabled + label.ag-checkbox-label {
+  cursor: not-allowed;
+}
+
+/* 禁用未选中 */
+input.ag-checkbox[type=checkbox]:disabled:not(:checked) + label.ag-checkbox-label:after {
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+/* 禁用选中 */
+input.ag-checkbox[type=checkbox]:disabled:checked + label.ag-checkbox-label:before {
+  border-right: 2px solid #9f9f9f;
+  border-bottom: 2px solid #9f9f9f;
+}
+input.ag-checkbox[type=checkbox]:disabled:checked + label.ag-checkbox-label:after {
+  padding: 0;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+}

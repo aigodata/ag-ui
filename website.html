@@ -899,76 +899,62 @@ font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Micros
           <!--布局示例-->
           <div class="rx-demo-layout">
             <!--说明-->
-            <p class="explain">因牵扯到伪类情况, 仅内置了6种颜色: red orange yellow green blue gray, 例: red, bg-red, border-red </p>
+            <p class="explain">仅支持label在checkbox后面的展示方式.</p>
             <!--示例代码-->
             <div class="example-wrap">
               <div class="code-example-wrap">
-                <div class="button-wrap">
-                  <button class="ag-button bg-red ag-white">红色按钮</button>
-                  <button class="ag-button bg-orange ag-white">橙色按钮</button>
-                  <button class="ag-button bg-yellow ag-white">黄色按钮</button>
-                  <button class="ag-button bg-green ag-white">绿色按钮</button>
-                  <button class="ag-button bg-blue ag-white">蓝色按钮</button>
-                  <button class="ag-button bg-gray ag-white">灰色按钮</button>
+
+                <div class="component-wrap checkbox">
+                  <input type="checkbox" name="checkbox" id="checkbox-checked" class="ag-checkbox" checked>
+                  <label for="checkbox-checked" class="ag-checkbox-label">选中状态</label>
+
+                  <input type="checkbox" name="checkbox" id="checkbox-no-checked" class="ag-checkbox">
+                  <label for="checkbox-no-checked" class="ag-checkbox-label">未选中状态</label>
+
+                  <input type="checkbox" name="checkbox" id="checkbox-no-checked2" class="ag-checkbox">
+                  <label for="checkbox-no-checked2" class="ag-checkbox-label">未选中状态</label>
+
+                  <input type="checkbox" name="radio4" id="checkbox-disabled-checked" class="ag-checkbox" checked disabled>
+                  <label for="checkbox-disabled-checked" class="ag-checkbox-label">禁用选中状态</label>
+
+                  <input type="checkbox" name="radio5" id="checkbox-disabled-no-checked" class="ag-checkbox" disabled>
+                  <label for="checkbox-disabled-no-checked" class="ag-checkbox-label">禁用未选中状态</label>
                 </div>
-                <div class="button-wrap">
-                  <button class="ag-button border-red ag-red-3">红色按钮</button>
-                  <button class="ag-button border-orange ag-orange-3">橙色按钮</button>
-                  <button class="ag-button border-yellow ag-yellow-3">黄色按钮</button>
-                  <button class="ag-button border-green ag-green-3">绿色按钮</button>
-                  <button class="ag-button border-blue ag-blue-3">蓝色按钮</button>
-                  <button class="ag-button border-gray ag-gray-3">灰色按钮</button>
-                </div>
-                <div class="button-wrap">
-                  <button class="ag-button text red">红色按钮</button>
-                  <button class="ag-button text orange">橙色按钮</button>
-                  <button class="ag-button text yellow">黄色按钮</button>
-                  <button class="ag-button text green">绿色按钮</button>
-                  <button class="ag-button text blue">蓝色按钮</button>
-                  <button class="ag-button text gray">灰色按钮</button>
-                </div>
+
               </div>
               <!--代码块-->
-              <div class="rx-relative code-block" button-code-1>
+              <div class="rx-relative code-block" checkbox-code-1>
                 <!--复制icon-->
                 <a href="javascript:void(0)" class="copy"
                    data-clipboard-demo data-clipboard-action="copy"
-                   data-clipboard-target=".button-code-1">
+                   data-clipboard-target=".checkbox-code-1">
                   <i class="icon iconfont icon-fuzhi"></i>
                 </a>
                 <pre class="rx-border-top">
-                  <code class="rx-clear-radius button-code-1 css html">
+                  <code class="rx-clear-radius checkbox-code-1 css html">
 
-&lt;div class=&quot;button-wrap&quot;&gt;
-  &lt;button class=&quot;ag-button bg-red ag-white&quot;&gt;红色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button bg-orange ag-white&quot;&gt;橙色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button bg-yellow ag-white&quot;&gt;黄色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button bg-green ag-white&quot;&gt;绿色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button bg-blue ag-white&quot;&gt;蓝色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button bg-gray ag-white&quot;&gt;灰色按钮&lt;/button&gt;
-&lt;/div&gt;
-&lt;div class=&quot;button-wrap&quot;&gt;
-  &lt;button class=&quot;ag-button border-red ag-red-3&quot;&gt;红色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button border-orange ag-orange-3&quot;&gt;橙色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button border-yellow ag-yellow-3&quot;&gt;黄色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button border-green ag-green-3&quot;&gt;绿色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button border-blue ag-blue-3&quot;&gt;蓝色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button border-gray ag-gray-3&quot;&gt;灰色按钮&lt;/button&gt;
-&lt;/div&gt;
-&lt;div class=&quot;button-wrap&quot;&gt;
-  &lt;button class=&quot;ag-button text red&quot;&gt;红色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button text orange&quot;&gt;橙色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button text yellow&quot;&gt;黄色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button text green&quot;&gt;绿色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button text blue&quot;&gt;蓝色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button text gray&quot;&gt;灰色按钮&lt;/button&gt;
+&lt;div class=&quot;component-wrap checkbox&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; id=&quot;checkbox-checked&quot; class=&quot;ag-checkbox&quot; checked&gt;
+  &lt;label for=&quot;checkbox-checked&quot; class=&quot;ag-checkbox-label&quot;&gt;选中状态&lt;/label&gt;
+
+  &lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; id=&quot;checkbox-no-checked&quot; class=&quot;ag-checkbox&quot;&gt;
+  &lt;label for=&quot;checkbox-no-checked&quot; class=&quot;ag-checkbox-label&quot;&gt;未选中状态&lt;/label&gt;
+
+  &lt;input type=&quot;checkbox&quot; name=&quot;checkbox&quot; id=&quot;checkbox-no-checked2&quot; class=&quot;ag-checkbox&quot;&gt;
+  &lt;label for=&quot;checkbox-no-checked2&quot; class=&quot;ag-checkbox-label&quot;&gt;未选中状态&lt;/label&gt;
+
+  &lt;input type=&quot;checkbox&quot; name=&quot;radio4&quot; id=&quot;checkbox-disabled-checked&quot; class=&quot;ag-checkbox&quot; checked disabled&gt;
+  &lt;label for=&quot;checkbox-disabled-checked&quot; class=&quot;ag-checkbox-label&quot;&gt;禁用选中状态&lt;/label&gt;
+
+  &lt;input type=&quot;checkbox&quot; name=&quot;radio5&quot; id=&quot;checkbox-disabled-no-checked&quot; class=&quot;ag-checkbox&quot; disabled&gt;
+  &lt;label for=&quot;checkbox-disabled-no-checked&quot; class=&quot;ag-checkbox-label&quot;&gt;禁用未选中状态&lt;/label&gt;
 &lt;/div&gt;
 
                   </code>
                 </pre>
               </div>
               <!--按钮-->
-              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="button-code-1">
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="checkbox-code-1">
                 <span class="show">显示代码</span>
                 <span class="hide">隐藏代码</span>
               </a>
