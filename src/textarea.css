@@ -1,2 +1,30 @@
 /* 文本域样式 */
 
+/* chrome浏览器的input自动填充文本后的背景色默认是黄色 */
+/* 使用以下样式来覆盖原有的样式，更改了背景和字体颜色 */
+.ag-textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+  -webkit-text-fill-color: #fff;
+  background-color: #fff;
+  background-image: none;
+}
+
+.ag-textarea {
+  outline: none;  /* 取消chrome浏览器的input获取焦点的默认辉光 */
+  padding: 10px;
+  color: #585858;
+  background: #fff;
+  border: 1px solid #CECECE;
+  border-radius: 3px;
+}
+
+.ag-textarea:focus {
+  border: 1px solid #30A8FF;
+}
+
+.ag-textarea:disabled {
+  cursor: not-allowed;
+  background-color: #F5F5F5;
+  border: 1px solid #CECECE;
+  color: #A6A6A6;
+}

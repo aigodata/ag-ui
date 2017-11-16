@@ -9,7 +9,6 @@ gulp.task('default', function () {
 	// 将你的默认的任务代码放在这
 	return gulp.src([
 		'./src/base.css',
-		'./src/color.css',
 		'./src/font.css',
 		'./src/layout.css',
 		'./src/button.css',
@@ -17,6 +16,8 @@ gulp.task('default', function () {
 		'./src/checkbox.css',
 		'./src/input.css',
 		'./src/textarea.css',
+
+		'./src/color.css',
 	])
 		.pipe(concat('ag-ui-' + version + '.css'))
 		.pipe(gulp.dest('./dist/'));

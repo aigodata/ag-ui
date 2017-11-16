@@ -1,2 +1,71 @@
 /* 输入框样式 */
 
+/* chrome浏览器的input自动填充文本后的背景色默认是黄色 */
+/* 使用以下样式来覆盖原有的样式，更改了背景和字体颜色 */
+.ag-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+  -webkit-text-fill-color: #fff;
+  background-color: #fff;
+  background-image: none;
+}
+
+.ag-input {
+  outline: none;  /* 取消chrome浏览器的input获取焦点的默认辉光 */
+  padding: 10px;
+  color: #585858;
+  background: #fff;
+  border: 1px solid #CECECE;
+  border-radius: 3px;
+}
+
+.ag-input:focus {
+  border: 1px solid #30A8FF;
+}
+
+.ag-input:disabled {
+  cursor: not-allowed;
+  background-color: #F5F5F5;
+  border: 1px solid #CECECE;
+  color: #A6A6A6;
+}
+
+.ag-input::placeholder,
+.ag-input:-ms-input-placeholder,
+.ag-input::-moz-placeholder,
+.ag-input::-webkit-input-placeholder {
+  color: #A6A6A6;
+}
+
+.ag-input:disabled::placeholder,
+.ag-input:disabled:-ms-input-placeholder,
+.ag-input:disabled::-moz-placeholder,
+.ag-input:disabled::-webkit-input-placeholder {
+  color: #A6A6A6;
+}
+
+.ag-input-group {
+  position: relative;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.ag-input-group .ag-input-icon {
+  position: absolute;
+  top: 8px;
+}
+
+.ag-input-group .ag-input-icon.left {
+  left: 10px;
+}
+
+.ag-input-group .ag-input-icon.right {
+  right: 30px;
+}
+
+.ag-input-group .ag-input-icon.left + .ag-input {
+  padding-left: 30px;
+}
+
+.ag-input-group .ag-input-icon.right + .ag-input {
+  padding-right: 30px;
+}

@@ -1,5 +1,5 @@
 # ag-ui
-一套简单易学的专注页面交互逻辑的UI
+ag-ui是一套UI工具箱, 只求简单易用.
 
 # License
   MIT

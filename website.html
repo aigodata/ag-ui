@@ -8,6 +8,7 @@
   <title></title>
   <link rel="shortcut icon" href="/favicon.ico"/>
   <link rel="stylesheet" type="text/css" href="./assets/fonts/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/primer.css">
   <link rel="stylesheet" type="text/css" href="./assets/styles/github.css">
   <link rel="stylesheet" type="text/css" href="./assets/styles/custom.css">
   <!-- 样式 -->
@@ -69,7 +70,7 @@
         <!--每段描述-->
         <div>
           <h3>自我介绍</h3>
-          <p>ag-ui是一套主要依靠CSS的UI框架, 只求简单易用</p>
+          <p>ag-ui是一套UI工具箱, 只求简单易用.</p>
         </div>
         <!--每段描述-->
         <div>
@@ -975,76 +976,98 @@ font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Micros
           <!--布局示例-->
           <div class="rx-demo-layout">
             <!--说明-->
-            <p class="explain">因牵扯到伪类情况, 仅内置了6种颜色: red orange yellow green blue gray, 例: red, bg-red, border-red </p>
+            <p class="explain">提供了三种状态, normal focus disabled</p>
             <!--示例代码-->
             <div class="example-wrap">
               <div class="code-example-wrap">
-                <div class="button-wrap">
-                  <button class="ag-button bg-red ag-white">红色按钮</button>
-                  <button class="ag-button bg-orange ag-white">橙色按钮</button>
-                  <button class="ag-button bg-yellow ag-white">黄色按钮</button>
-                  <button class="ag-button bg-green ag-white">绿色按钮</button>
-                  <button class="ag-button bg-blue ag-white">蓝色按钮</button>
-                  <button class="ag-button bg-gray ag-white">灰色按钮</button>
-                </div>
-                <div class="button-wrap">
-                  <button class="ag-button border-red ag-red-3">红色按钮</button>
-                  <button class="ag-button border-orange ag-orange-3">橙色按钮</button>
-                  <button class="ag-button border-yellow ag-yellow-3">黄色按钮</button>
-                  <button class="ag-button border-green ag-green-3">绿色按钮</button>
-                  <button class="ag-button border-blue ag-blue-3">蓝色按钮</button>
-                  <button class="ag-button border-gray ag-gray-3">灰色按钮</button>
-                </div>
-                <div class="button-wrap">
-                  <button class="ag-button text red">红色按钮</button>
-                  <button class="ag-button text orange">橙色按钮</button>
-                  <button class="ag-button text yellow">黄色按钮</button>
-                  <button class="ag-button text green">绿色按钮</button>
-                  <button class="ag-button text blue">蓝色按钮</button>
-                  <button class="ag-button text gray">灰色按钮</button>
+                <div class="input-wrap">
+                  <input type="text" class="ag-input" name="name" placeholder="normal">
+                  <input type="text" class="ag-input" name="name" value="focus">
+                  <input type="text" class="ag-input" name="name" value="disabled" disabled>
                 </div>
               </div>
               <!--代码块-->
-              <div class="rx-relative code-block" button-code-1>
+              <div class="rx-relative code-block" input-code-1>
                 <!--复制icon-->
                 <a href="javascript:void(0)" class="copy"
                    data-clipboard-demo data-clipboard-action="copy"
-                   data-clipboard-target=".button-code-1">
+                   data-clipboard-target=".input-code-1">
                   <i class="icon iconfont icon-fuzhi"></i>
                 </a>
                 <pre class="rx-border-top">
-                  <code class="rx-clear-radius button-code-1 css html">
-
-&lt;div class=&quot;button-wrap&quot;&gt;
-  &lt;button class=&quot;ag-button bg-red ag-white&quot;&gt;红色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button bg-orange ag-white&quot;&gt;橙色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button bg-yellow ag-white&quot;&gt;黄色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button bg-green ag-white&quot;&gt;绿色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button bg-blue ag-white&quot;&gt;蓝色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button bg-gray ag-white&quot;&gt;灰色按钮&lt;/button&gt;
-&lt;/div&gt;
-&lt;div class=&quot;button-wrap&quot;&gt;
-  &lt;button class=&quot;ag-button border-red ag-red-3&quot;&gt;红色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button border-orange ag-orange-3&quot;&gt;橙色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button border-yellow ag-yellow-3&quot;&gt;黄色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button border-green ag-green-3&quot;&gt;绿色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button border-blue ag-blue-3&quot;&gt;蓝色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button border-gray ag-gray-3&quot;&gt;灰色按钮&lt;/button&gt;
-&lt;/div&gt;
-&lt;div class=&quot;button-wrap&quot;&gt;
-  &lt;button class=&quot;ag-button text red&quot;&gt;红色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button text orange&quot;&gt;橙色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button text yellow&quot;&gt;黄色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button text green&quot;&gt;绿色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button text blue&quot;&gt;蓝色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button text gray&quot;&gt;灰色按钮&lt;/button&gt;
-&lt;/div&gt;
-
+                  <code class="rx-clear-radius input-code-1 css html">
+&lt;input type=&quot;text&quot; class=&quot;ag-input&quot; name=&quot;name&quot; placeholder=&quot;normal&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;ag-input&quot; name=&quot;name&quot; value=&quot;focus&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;ag-input&quot; name=&quot;name&quot; value=&quot;disabled&quot; disabled&gt;
                   </code>
                 </pre>
               </div>
               <!--按钮-->
-              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="button-code-1">
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="input-code-1">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--每个条目 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <p class="explain">仅支持icon写在input前面的书写方式</p>
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="input-wrap">
+
+                  <div class="ag-input-group">
+                    <i class="icon iconfont icon-sousuo ag-input-icon left"></i>
+                    <input type="text" class="ag-input" name="name" placeholder="搜索">
+                  </div>
+
+                  <div class="ag-input-group">
+                    <i class="icon iconfont icon-calendar ag-input-icon right"></i>
+                    <input type="text" class="ag-input" name="name" value="选择日期">
+                  </div>
+
+                  <div class="ag-input-group">
+                    <i class="icon iconfont icon-sousuo ag-input-icon left"></i>
+                    <input type="text" class="ag-input" name="name" value="搜索" disabled>
+                  </div>
+
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" input-code-2>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".input-code-2">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius input-code-2 css html">
+&lt;div class=&quot;ag-input-group&quot;&gt;
+  &lt;i class=&quot;icon iconfont icon-sousuo ag-input-icon left&quot;&gt;&lt;/i&gt;
+  &lt;input type=&quot;text&quot; class=&quot;ag-input&quot; name=&quot;name&quot; placeholder=&quot;搜索&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ag-input-group&quot;&gt;
+  &lt;i class=&quot;icon iconfont icon-calendar ag-input-icon right&quot;&gt;&lt;/i&gt;
+  &lt;input type=&quot;text&quot; class=&quot;ag-input&quot; name=&quot;name&quot; value=&quot;选择日期&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ag-input-group&quot;&gt;
+  &lt;i class=&quot;icon iconfont icon-sousuo ag-input-icon left&quot;&gt;&lt;/i&gt;
+  &lt;input type=&quot;text&quot; class=&quot;ag-input&quot; name=&quot;name&quot; value=&quot;搜索&quot; disabled&gt;
+&lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="input-code-2">
                 <span class="show">显示代码</span>
                 <span class="hide">隐藏代码</span>
               </a>
@@ -1065,76 +1088,34 @@ font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Micros
           <!--布局示例-->
           <div class="rx-demo-layout">
             <!--说明-->
-            <p class="explain">因牵扯到伪类情况, 仅内置了6种颜色: red orange yellow green blue gray, 例: red, bg-red, border-red </p>
+            <!--<p class="explain">因牵扯到伪类情况, 仅内置了6种颜色: red orange yellow green blue gray, 例: red, bg-red, border-red </p>-->
             <!--示例代码-->
             <div class="example-wrap">
               <div class="code-example-wrap">
-                <div class="button-wrap">
-                  <button class="ag-button bg-red ag-white">红色按钮</button>
-                  <button class="ag-button bg-orange ag-white">橙色按钮</button>
-                  <button class="ag-button bg-yellow ag-white">黄色按钮</button>
-                  <button class="ag-button bg-green ag-white">绿色按钮</button>
-                  <button class="ag-button bg-blue ag-white">蓝色按钮</button>
-                  <button class="ag-button bg-gray ag-white">灰色按钮</button>
-                </div>
-                <div class="button-wrap">
-                  <button class="ag-button border-red ag-red-3">红色按钮</button>
-                  <button class="ag-button border-orange ag-orange-3">橙色按钮</button>
-                  <button class="ag-button border-yellow ag-yellow-3">黄色按钮</button>
-                  <button class="ag-button border-green ag-green-3">绿色按钮</button>
-                  <button class="ag-button border-blue ag-blue-3">蓝色按钮</button>
-                  <button class="ag-button border-gray ag-gray-3">灰色按钮</button>
-                </div>
-                <div class="button-wrap">
-                  <button class="ag-button text red">红色按钮</button>
-                  <button class="ag-button text orange">橙色按钮</button>
-                  <button class="ag-button text yellow">黄色按钮</button>
-                  <button class="ag-button text green">绿色按钮</button>
-                  <button class="ag-button text blue">蓝色按钮</button>
-                  <button class="ag-button text gray">灰色按钮</button>
+                <div class="textarea-wrap">
+                  <textarea rows="3" cols="20" class="ag-textarea" name="name" placeholder="normal"></textarea>
+                  <textarea rows="3" cols="20" class="ag-textarea" name="name">我是文本域</textarea>
+                  <textarea rows="3" cols="20" class="ag-textarea" name="name" disabled>我是文本域</textarea>
                 </div>
               </div>
               <!--代码块-->
-              <div class="rx-relative code-block" button-code-1>
+              <div class="rx-relative code-block" textarea-code-1>
                 <!--复制icon-->
                 <a href="javascript:void(0)" class="copy"
                    data-clipboard-demo data-clipboard-action="copy"
-                   data-clipboard-target=".button-code-1">
+                   data-clipboard-target=".textarea-code-1">
                   <i class="icon iconfont icon-fuzhi"></i>
                 </a>
                 <pre class="rx-border-top">
-                  <code class="rx-clear-radius button-code-1 css html">
-
-&lt;div class=&quot;button-wrap&quot;&gt;
-  &lt;button class=&quot;ag-button bg-red ag-white&quot;&gt;红色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button bg-orange ag-white&quot;&gt;橙色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button bg-yellow ag-white&quot;&gt;黄色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button bg-green ag-white&quot;&gt;绿色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button bg-blue ag-white&quot;&gt;蓝色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button bg-gray ag-white&quot;&gt;灰色按钮&lt;/button&gt;
-&lt;/div&gt;
-&lt;div class=&quot;button-wrap&quot;&gt;
-  &lt;button class=&quot;ag-button border-red ag-red-3&quot;&gt;红色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button border-orange ag-orange-3&quot;&gt;橙色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button border-yellow ag-yellow-3&quot;&gt;黄色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button border-green ag-green-3&quot;&gt;绿色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button border-blue ag-blue-3&quot;&gt;蓝色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button border-gray ag-gray-3&quot;&gt;灰色按钮&lt;/button&gt;
-&lt;/div&gt;
-&lt;div class=&quot;button-wrap&quot;&gt;
-  &lt;button class=&quot;ag-button text red&quot;&gt;红色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button text orange&quot;&gt;橙色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button text yellow&quot;&gt;黄色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button text green&quot;&gt;绿色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button text blue&quot;&gt;蓝色按钮&lt;/button&gt;
-  &lt;button class=&quot;ag-button text gray&quot;&gt;灰色按钮&lt;/button&gt;
-&lt;/div&gt;
-
+                  <code class="rx-clear-radius textarea-code-1 css html">
+&lt;textarea rows=&quot;3&quot; cols=&quot;20&quot; class=&quot;ag-textarea&quot; name=&quot;name&quot; placeholder=&quot;normal&quot;&gt;&lt;/textarea&gt;
+&lt;textarea rows=&quot;3&quot; cols=&quot;20&quot; class=&quot;ag-textarea&quot; name=&quot;name&quot;&gt;我是文本域&lt;/textarea&gt;
+&lt;textarea rows=&quot;3&quot; cols=&quot;20&quot; class=&quot;ag-textarea&quot; name=&quot;name&quot; disabled&gt;我是文本域&lt;/textarea&gt;
                   </code>
                 </pre>
               </div>
               <!--按钮-->
-              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="button-code-1">
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="textarea-code-1">
                 <span class="show">显示代码</span>
                 <span class="hide">隐藏代码</span>
               </a>

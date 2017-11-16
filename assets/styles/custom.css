@@ -525,7 +525,6 @@ textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 100%;
 }
 
 .snippet {
@@ -845,4 +844,13 @@ code {
 .component-wrap.checkbox > label {
   padding-right: 20px;
   font-weight: 300;
+}
+
+.input-wrap input {
+  margin-right: 20px;
+  width: 200px;
+}
+.textarea-wrap textarea {
+  margin-right: 20px;
+  width: 300px;
 }
