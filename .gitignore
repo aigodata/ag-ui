@@ -2,7 +2,6 @@
 
 **/node_modules
 .idea/
-dist/
 npm-debug.log*
 .DS_Store*
 .project
