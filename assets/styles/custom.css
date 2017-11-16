@@ -15,7 +15,6 @@ html, body, .rx-wrap {
 }
 
 body {
-  font-family: "Microsoft Yahei", "微软雅黑", Tahoma, Arial, Helvetica;
   font-size: 12px;
   font-weight: 300;
   color: #333;
@@ -37,7 +36,6 @@ a:focus {
 }
 
 input, button, select {
-  font-family: "Microsoft Yahei", "微软雅黑", Tahoma, Arial, Helvetica;
   outline: none;
 }
 

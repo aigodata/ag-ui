@@ -4,6 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
+    "build": "./node_modules/.bin/gulp",
     "start": "npm run dev-server",
     "open": "open -a '/Applications/Google Chrome.app' 'http://localhost:9000'",
     "dev-server": "./node_modules/.bin/nodemon server/server.js",
@@ -11,6 +12,8 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "koa": "^2.2.0",
     "koa-bodyparser": "^4.2.0",
     "koa-compress": "^2.0.0",
