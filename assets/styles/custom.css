@@ -846,6 +846,11 @@ code {
   font-weight: 300;
 }
 
+.component-wrap.switch > label {
+  margin-right: 20px;
+  font-weight: 300;
+}
+
 .input-wrap input {
   margin-right: 20px;
   width: 200px;
@@ -853,4 +858,9 @@ code {
 .textarea-wrap textarea {
   margin-right: 20px;
   width: 300px;
+}
+
+.select-wrap select {
+  margin-right: 20px;
+  width: 200px;
 }

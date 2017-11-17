@@ -50,10 +50,16 @@
           <a href="#checkbox">Checkbox 多选按钮</a>
         </li>
         <li>
+          <a href="#switch">Switch 开关</a>
+        </li>
+        <li>
           <a href="#input">Input 文本框</a>
         </li>
         <li>
           <a href="#textarea">Textarea 文本域</a>
+        </li>
+        <li>
+          <a href="#select">Select 下拉框</a>
         </li>
       </ul>
     </div>
@@ -423,7 +429,7 @@
         <!--每个条目 -- Color 色彩 -->
         <div>
           <h3>配色方案</h3>
-          <p>颜色书写分为三种: 字体颜色 | 背景色 | 边框色; 颜色值的数字1-5是由浅入深的意思.</p>
+          <p>颜色书写分为三种: 字体颜色 | 背景色 | 边框色; 颜色值的数字1-5是由浅入深的意思, 对于有伪态的情况不建议使用.</p>
           <!--说明-->
           <p class="explain">使用举例: .ag-blue-1; .ag-bg-blue-2; .ag-border-blue-3;</p>
           <!--页面配色-->
@@ -963,6 +969,112 @@ font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Micros
           </div>
         </div>
       </div>
+      <!-- switch -->
+      <div id="switch" class="rx-each-item">
+        <!--标题-->
+        <div class="rx-tit">
+          <h2>Switch 开关</h2>
+          <!--<p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
+        </div>
+        <!--每个条目 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <p class="explain">基于checkbox模拟的switch效果, 支持文字可以在switch左右显示.</p>
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+
+                <div class="component-wrap switch">
+
+                  <input type="checkbox" name="switch1" id="switch-checked" class="ag-switch" checked>
+                  <label for="switch-checked" class="ag-switch-label">开启</label>
+
+                  <input type="checkbox" name="switch2" id="switch-no-checked" class="ag-switch">
+                  <label for="switch-no-checked" class="ag-switch-label">关闭</label>
+
+
+                  <input type="checkbox" name="switch3" id="switch-disabled-checked" class="ag-switch" checked disabled>
+                  <label for="switch-disabled-checked" class="ag-switch-label">禁用开启</label>
+
+                  <input type="checkbox" name="switch4" id="switch-disabled-no-checked" class="ag-switch" disabled>
+                  <label for="switch-disabled-no-checked" class="ag-switch-label">禁用关闭</label>
+                </div>
+
+                <div class="component-wrap switch">
+
+                  <input type="checkbox" name="switch1" id="switch-checked-2" class="ag-switch" checked>
+                  <label for="switch-checked-2" class="ag-switch-label right">开启</label>
+
+                  <input type="checkbox" name="switch2" id="switch-no-checked-2" class="ag-switch">
+                  <label for="switch-no-checked-2" class="ag-switch-label right">关闭</label>
+
+
+                  <input type="checkbox" name="switch3" id="switch-disabled-checked-2" class="ag-switch" checked disabled>
+                  <label for="switch-disabled-checked-2" class="ag-switch-label right">禁用开启</label>
+
+                  <input type="checkbox" name="switch4" id="switch-disabled-no-checked-2" class="ag-switch" disabled>
+                  <label for="switch-disabled-no-checked-2" class="ag-switch-label right">禁用关闭</label>
+                </div>
+
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" switch-code-1>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".switch-code-1">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius switch-code-1 css html">
+
+&lt;div class=&quot;component-wrap switch&quot;&gt;
+
+  &lt;input type=&quot;checkbox&quot; name=&quot;switch1&quot; id=&quot;switch-checked&quot; class=&quot;ag-switch&quot; checked&gt;
+  &lt;label for=&quot;switch-checked&quot; class=&quot;ag-switch-label&quot;&gt;开启&lt;/label&gt;
+
+  &lt;input type=&quot;checkbox&quot; name=&quot;switch2&quot; id=&quot;switch-no-checked&quot; class=&quot;ag-switch&quot;&gt;
+  &lt;label for=&quot;switch-no-checked&quot; class=&quot;ag-switch-label&quot;&gt;关闭&lt;/label&gt;
+
+
+  &lt;input type=&quot;checkbox&quot; name=&quot;switch3&quot; id=&quot;switch-disabled-checked&quot; class=&quot;ag-switch&quot; checked disabled&gt;
+  &lt;label for=&quot;switch-disabled-checked&quot; class=&quot;ag-switch-label&quot;&gt;禁用开启&lt;/label&gt;
+
+  &lt;input type=&quot;checkbox&quot; name=&quot;switch4&quot; id=&quot;switch-disabled-no-checked&quot; class=&quot;ag-switch&quot; disabled&gt;
+  &lt;label for=&quot;switch-disabled-no-checked&quot; class=&quot;ag-switch-label&quot;&gt;禁用关闭&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;component-wrap switch&quot;&gt;
+
+  &lt;input type=&quot;checkbox&quot; name=&quot;switch1&quot; id=&quot;switch-checked-2&quot; class=&quot;ag-switch&quot; checked&gt;
+  &lt;label for=&quot;switch-checked-2&quot; class=&quot;ag-switch-label right&quot;&gt;开启&lt;/label&gt;
+
+  &lt;input type=&quot;checkbox&quot; name=&quot;switch2&quot; id=&quot;switch-no-checked-2&quot; class=&quot;ag-switch&quot;&gt;
+  &lt;label for=&quot;switch-no-checked-2&quot; class=&quot;ag-switch-label right&quot;&gt;关闭&lt;/label&gt;
+
+
+  &lt;input type=&quot;checkbox&quot; name=&quot;switch3&quot; id=&quot;switch-disabled-checked-2&quot; class=&quot;ag-switch&quot; checked disabled&gt;
+  &lt;label for=&quot;switch-disabled-checked-2&quot; class=&quot;ag-switch-label right&quot;&gt;禁用开启&lt;/label&gt;
+
+  &lt;input type=&quot;checkbox&quot; name=&quot;switch4&quot; id=&quot;switch-disabled-no-checked-2&quot; class=&quot;ag-switch&quot; disabled&gt;
+  &lt;label for=&quot;switch-disabled-no-checked-2&quot; class=&quot;ag-switch-label right&quot;&gt;禁用关闭&lt;/label&gt;
+&lt;/div&gt;
+
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="switch-code-1">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- input -->
       <div id="input" class="rx-each-item">
         <!--标题-->
@@ -1116,6 +1228,66 @@ font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Micros
               </div>
               <!--按钮-->
               <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="textarea-code-1">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- select -->
+      <div id="select" class="rx-each-item">
+        <!--标题-->
+        <div class="rx-tit">
+          <h2>Select 下拉框</h2>
+          <!--<p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
+        </div>
+        <!--每个条目 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <p class="explain">建议使用默认的select下拉框</p>
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="select-wrap">
+
+                  <select class="ag-select" name="select">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab" selected>Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+
+                  <select class="ag-select" name="select" disabled>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab" selected>Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option>
+                  </select>
+
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" select-code-1>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".select-code-1">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius select-code-1 css html">
+&lt;input type=&quot;text&quot; class=&quot;ag-input&quot; name=&quot;name&quot; placeholder=&quot;normal&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;ag-input&quot; name=&quot;name&quot; value=&quot;focus&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;ag-input&quot; name=&quot;name&quot; value=&quot;disabled&quot; disabled&gt;
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="select-code-1">
                 <span class="show">显示代码</span>
                 <span class="hide">隐藏代码</span>
               </a>

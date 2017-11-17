@@ -10,14 +10,15 @@ gulp.task('default', function () {
 	return gulp.src([
 		'./src/base.css',
 		'./src/font.css',
+		'./src/color.css',
 		'./src/layout.css',
 		'./src/button.css',
 		'./src/radio.css',
 		'./src/checkbox.css',
 		'./src/input.css',
 		'./src/textarea.css',
-
-		'./src/color.css',
+		'./src/switch.css',
+		'./src/select.css',
 	])
 		.pipe(concat('ag-ui-' + version + '.css'))
 		.pipe(gulp.dest('./dist/'));

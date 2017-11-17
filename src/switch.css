@@ -1,0 +1,91 @@
+/* switch 开关 */
+
+.ag-switch {
+  display: none;
+}
+.ag-switch-label {
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.ag-switch-label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  z-index: 1;
+  border-radius: 8px;
+  transition: all .3s ease;
+}
+.ag-switch-label:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 40px;
+  height: 20px;
+  box-sizing: border-box;
+  transform: translate(0,-50%);
+  border-radius: 10px;
+}
+
+/* 未选中 */
+input.ag-switch[type=checkbox]:not(:checked) + label.ag-switch-label:before {
+  background-color: #fff;
+}
+input.ag-switch[type=checkbox]:not(:checked) + label.ag-switch-label:after {
+  background-color: #D8D8D8;
+}
+
+/* 选中 */
+input.ag-switch[type=checkbox]:checked + label.ag-switch-label::before {
+  left: 22px;
+  background-color: #fff;
+}
+input.ag-switch[type=checkbox]:checked + label.ag-switch-label:after {
+  background-color: #30A8FF;
+}
+
+/* 禁用 */
+input.ag-switch[type=checkbox]:disabled + label.ag-switch-label {
+  cursor: not-allowed;
+}
+
+/* 禁用未选中 */
+input.ag-switch[type=checkbox]:disabled:not(:checked) + label.ag-switch-label:before {
+  background-color: #fff;
+}
+input.ag-switch[type=checkbox]:disabled:not(:checked) + label.ag-switch-label:after {
+  background-color: #eeeeee;
+}
+
+/* 禁用选中 */
+input.ag-switch[type=checkbox]:disabled:checked + label.ag-switch-label:before {
+  background-color: #fff;
+}
+input.ag-switch[type=checkbox]:disabled:checked + label.ag-switch-label:after {
+  background-color: #afddff;
+}
+
+
+/* 右侧显示 */
+.ag-switch-label.right {
+  padding-right: 50px;
+  padding-left: 0;
+}
+.ag-switch-label.right:before {
+  right: 3px;
+  left: auto;
+}
+.ag-switch-label.right:after {
+  right: 0;
+  left: auto;
+}
+/* 选中 */
+input.ag-switch[type=checkbox]:checked + label.ag-switch-label.right::before {
+  right: 22px;
+  left: auto;
+}
