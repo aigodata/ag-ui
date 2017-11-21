@@ -23,6 +23,8 @@ gulp.task('default', function () {
 		'./src/breadcrumb.css',
 		'./src/progress.css',
 		'./src/loading.css',
+		'./src/tabs.css',
+		'./src/drawer.css',
 
 		'./src/color.css',
 	])

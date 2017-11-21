@@ -1,0 +1,47 @@
+/* Drawer 抽屉 */
+
+/* 遮罩 */
+.ag-drawer-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0,0,0,0.15);
+  display: none;
+}
+
+.ag-drawer-mask[active] {
+  display: block;
+}
+
+/* 抽屉 */
+.ag-drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  min-width: 200px;
+  transition: all .3s ease;
+  transform: translateX(100%);
+  visibility: hidden;
+}
+
+.ag-drawer[active] {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* 位置 */
+.ag-drawer.left {
+  right: auto;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.ag-drawer.left[active] {
+  visibility: visible;
+  transform: translateX(0);
+}

@@ -12,6 +12,10 @@
   clear: both;
 }
 
+.ag-pointer {
+  cursor: pointer;
+}
+
 .ag-hide {
   display: none;
 }

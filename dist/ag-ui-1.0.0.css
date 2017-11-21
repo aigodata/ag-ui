@@ -12,6 +12,10 @@
   clear: both;
 }
 
+.ag-pointer {
+  cursor: pointer;
+}
+
 .ag-hide {
   display: none;
 }
@@ -866,6 +870,110 @@ input.ag-switch[type=checkbox]:checked + label.ag-switch-label.right::before {
   100% {
     transform:rotate(360deg);
   }
+}
+
+/* Tabs 标签页 */
+
+.ag-tab {
+}
+
+.ag-tab .ag-tab-head {
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.ag-tab .ag-tab-head .ag-tab-head-item {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.ag-tab .ag-tab-head .ag-tab-head-item:hover {
+  color: #30A8FF;
+}
+
+.ag-tab .ag-tab-head .ag-tab-head-item[active] {
+  border-bottom: 2px solid #30A8FF;
+}
+
+.ag-tab .ag-tab-content {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.ag-tab .ag-tab-content .ag-tab-content-item {
+  display: none;
+}
+
+.ag-tab .ag-tab-content .ag-tab-content-item[active] {
+  display: block;
+}
+
+/* 卡片风格 */
+
+.ag-tab-card {
+}
+
+.ag-tab-card .ag-tab-head .ag-tab-head-item {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border: 1px solid #E7E7E7;
+}
+
+.ag-tab-card .ag-tab-head .ag-tab-head-item[active] {
+  border-bottom: 1px solid #fff;
+}
+
+
+
+/* Drawer 抽屉 */
+
+/* 遮罩 */
+.ag-drawer-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0,0,0,0.15);
+  display: none;
+}
+
+.ag-drawer-mask[active] {
+  display: block;
+}
+
+/* 抽屉 */
+.ag-drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  min-width: 200px;
+  transition: all .3s ease;
+  transform: translateX(100%);
+  visibility: hidden;
+}
+
+.ag-drawer[active] {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* 位置 */
+.ag-drawer.left {
+  right: auto;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.ag-drawer.left[active] {
+  visibility: visible;
+  transform: translateX(0);
 }
 
 /* 颜色样式 */

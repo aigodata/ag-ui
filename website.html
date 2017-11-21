@@ -76,6 +76,12 @@
         <li>
           <a href="#loading">Loading 加载</a>
         </li>
+        <li>
+          <a href="#tabs">Tabs 标签页</a>
+        </li>
+        <li>
+          <a href="#drawer">Drawer 抽屉</a>
+        </li>
       </ul>
     </div>
     <!--右侧-->
@@ -638,7 +644,7 @@ font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Micros
         <!--标题-->
         <div class="rx-tit">
           <h2>Icon 图标</h2>
-          <p>我们不内置图标库, 建议使用<a href="//iconfont.cn/">IconFont</a>管理你的项目图标.</p>
+          <p>我们不内置图标库, 建议使用<a target="_blank" href="//iconfont.cn/">IconFont</a>管理你的项目图标.</p>
         </div>
       </div>
       <!--Button 按钮-->
@@ -1681,6 +1687,227 @@ font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Micros
               </div>
               <!--按钮-->
               <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="loading-code-1">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- tab -->
+      <div id="tabs" class="rx-each-item">
+        <!--标题-->
+        <div class="rx-tit">
+          <h2>Tabs 标签页</h2>
+          <!--<p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
+          <p class="explain">不需要配置js代码也可以使用</p>
+        </div>
+        <!--每个条目 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <!--<p class="explain">风格一</p>-->
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="code-wrap">
+
+                  <div class="ag-tab">
+                    <div class="ag-tab-head">
+                      <div class="ag-tab-head-item" ag-click target-group="ag-tabs" active>标签页1</div>
+                      <div class="ag-tab-head-item" ag-click target-group="ag-tabs">标签页2</div>
+                    </div>
+                    <div class="ag-tab-content">
+                      <div class="ag-tab-content-item" ag-tabs active>
+                        标签页1的内容页<br>
+                        标签页1的内容页<br>
+                        标签页1的内容页<br>
+                        标签页1的内容页<br>
+                      </div>
+                      <div class="ag-tab-content-item" ag-tabs>
+                        标签页2的内容页<br>
+                        标签页2的内容页<br>
+                        标签页2的内容页<br>
+                        标签页2的内容页<br>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" tab-code-1>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".tab-code-1">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius tab-code-1 css html">
+&lt;div class=&quot;ag-tab&quot;&gt;
+  &lt;div class=&quot;ag-tab-head&quot;&gt;
+    &lt;div class=&quot;ag-tab-head-item&quot; ag-click target-group=&quot;ag-tabs&quot; active&gt;标签页1&lt;/div&gt;
+    &lt;div class=&quot;ag-tab-head-item&quot; ag-click target-group=&quot;ag-tabs&quot;&gt;标签页2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;ag-tab-content&quot;&gt;
+    &lt;div class=&quot;ag-tab-content-item&quot; ag-tabs active&gt;
+      标签页1的内容页&lt;br&gt;
+      标签页1的内容页&lt;br&gt;
+      标签页1的内容页&lt;br&gt;
+      标签页1的内容页&lt;br&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ag-tab-content-item&quot; ag-tabs&gt;
+      标签页2的内容页&lt;br&gt;
+      标签页2的内容页&lt;br&gt;
+      标签页2的内容页&lt;br&gt;
+      标签页2的内容页&lt;br&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="tab-code-1">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--每个条目 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <!--<p class="explain">风格一</p>-->
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="code-wrap">
+
+                  <div class="ag-tab ag-tab-card">
+                    <div class="ag-tab-head">
+                      <div class="ag-tab-head-item" ag-click target-group="ag-tabs-2" active>标签页1</div>
+                      <div class="ag-tab-head-item" ag-click target-group="ag-tabs-2">标签页2</div>
+                    </div>
+                    <div class="ag-tab-content">
+                      <div class="ag-tab-content-item" ag-tabs-2 active>
+                        标签页1的内容页<br>
+                        标签页1的内容页<br>
+                        标签页1的内容页<br>
+                        标签页1的内容页<br>
+                      </div>
+                      <div class="ag-tab-content-item" ag-tabs-2>
+                        标签页2的内容页<br>
+                        标签页2的内容页<br>
+                        标签页2的内容页<br>
+                        标签页2的内容页<br>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" tab-code-2>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".tab-code-2">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius tab-code-2 css html">
+&lt;div class=&quot;ag-tab ag-tab-card&quot;&gt;
+  &lt;div class=&quot;ag-tab-head&quot;&gt;
+    &lt;div class=&quot;ag-tab-head-item&quot; ag-click target-group=&quot;ag-tabs-2&quot; active&gt;标签页1&lt;/div&gt;
+    &lt;div class=&quot;ag-tab-head-item&quot; ag-click target-group=&quot;ag-tabs-2&quot;&gt;标签页2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;ag-tab-content&quot;&gt;
+    &lt;div class=&quot;ag-tab-content-item&quot; ag-tabs-2 active&gt;
+      标签页1的内容页&lt;br&gt;
+      标签页1的内容页&lt;br&gt;
+      标签页1的内容页&lt;br&gt;
+      标签页1的内容页&lt;br&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ag-tab-content-item&quot; ag-tabs-2&gt;
+      标签页2的内容页&lt;br&gt;
+      标签页2的内容页&lt;br&gt;
+      标签页2的内容页&lt;br&gt;
+      标签页2的内容页&lt;br&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="tab-code-2">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- drawer -->
+      <div id="drawer" class="rx-each-item">
+        <!--标题-->
+        <div class="rx-tit">
+          <h2>Drawer 抽屉</h2>
+          <!--<p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
+        </div>
+        <!--每个条目 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <p class="explain">抽屉配置较灵活, 支持任意搭配, 不需要配置js代码也可以使用.</p>
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="code-wrap drawer">
+
+                  <button class="ag-button bg-blue ag-white" ag-click target="ag-drawer-2">左侧弹出</button>
+                  <div ag-drawer-2 class="ag-drawer left ag-bg-blue-3 ag-white">
+                    <span class="ag-pointer" ag-click remove target="ag-drawer-2">点击我关闭</span>
+                  </div>
+
+                  <button class="ag-button bg-blue ag-white" ag-click target="ag-drawer-mask ag-drawer">右侧弹出</button>
+                  <div ag-drawer-mask class="ag-drawer-mask" ag-click remove target="ag-drawer"></div>
+                  <div ag-drawer class="ag-drawer ag-bg-blue-3 ag-white">我是右侧抽屉</div>
+
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" drawer-code-1>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".drawer-code-1">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius drawer-code-1 css html">
+&lt;button class=&quot;ag-button bg-blue ag-white&quot; ag-click target=&quot;ag-drawer-2&quot;&gt;左侧弹出&lt;/button&gt;
+&lt;div ag-drawer-2 class=&quot;ag-drawer left ag-bg-blue-3 ag-white&quot;&gt;
+  &lt;span class=&quot;ag-pointer&quot; ag-click remove target=&quot;ag-drawer-2&quot;&gt;点击我关闭&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;button class=&quot;ag-button bg-blue ag-white&quot; ag-click target=&quot;ag-drawer-mask ag-drawer&quot;&gt;右侧弹出&lt;/button&gt;
+&lt;div ag-drawer-mask class=&quot;ag-drawer-mask&quot; ag-click remove target=&quot;ag-drawer&quot;&gt;&lt;/div&gt;
+&lt;div ag-drawer class=&quot;ag-drawer ag-bg-blue-3 ag-white&quot;&gt;我是右侧抽屉&lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="drawer-code-1">
                 <span class="show">显示代码</span>
                 <span class="hide">隐藏代码</span>
               </a>

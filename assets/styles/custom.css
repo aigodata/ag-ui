@@ -909,3 +909,7 @@ code {
 .code-wrap.progress>div .ag-progress {
   width: 400px;
 }
+
+.code-wrap.drawer button {
+  margin-right: 10px;
+}
