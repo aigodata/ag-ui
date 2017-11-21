@@ -42,530 +42,6 @@
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
 
-/* 颜色样式 */
-
-/* 红色 */
-
-.ag-red-1 {
-  color: #FF7676;
-}
-
-.ag-bg-red-1 {
-  background-color: #FF7676;
-}
-
-.ag-border-red-1 {
-  border-color: #FF7676;
-}
-
-.ag-red-2 {
-  color: #FF5050;
-}
-
-.ag-bg-red-2 {
-  background-color: #FF5050;
-}
-
-.ag-border-red-2 {
-  border-color: #FF5050;
-}
-
-.ag-red-3 {
-  color: #ED2E2E;
-}
-
-.ag-bg-red-3 {
-  background-color: #ED2E2E;
-}
-
-.ag-border-red-3 {
-  border-color: #ED2E2E;
-}
-
-.ag-red-4 {
-  color: #DE1111;
-}
-
-.ag-bg-red-4 {
-  background-color: #DE1111;
-}
-
-.ag-border-red-4 {
-  border-color: #DE1111;
-}
-
-.ag-red-5 {
-  color: #C50505;
-}
-
-.ag-bg-red-5 {
-  background-color: #C50505;
-}
-
-.ag-border-red-5 {
-  border-color: #C50505;
-}
-
-/* 橙色 */
-
-.ag-orange-1 {
-  color: #FEB57F;
-}
-
-.ag-bg-orange-1 {
-  background-color: #FEB57F;
-}
-
-.ag-border-orange-1 {
-  border-color: #FEB57F;
-}
-
-.ag-orange-2 {
-  color: #FC9F5B;
-}
-
-.ag-bg-orange-2 {
-  background-color: #FC9F5B;
-}
-
-.ag-border-orange-2 {
-  border-color: #FC9F5B;
-}
-
-.ag-orange-3 {
-  color: #FF6B1A;
-}
-
-.ag-bg-orange-3 {
-  background-color: #FF6B1A;
-}
-
-.ag-border-orange-3 {
-  border-color: #FF6B1A;
-}
-
-.ag-orange-4 {
-  color: #E8641B;
-}
-
-.ag-bg-orange-4 {
-  background-color: #E8641B;
-}
-
-.ag-border-orange-4 {
-  border-color: #E8641B;
-}
-
-.ag-orange-5 {
-  color: #CD4A02;
-}
-
-.ag-bg-orange-5 {
-  background-color: #CD4A02;
-}
-
-.ag-border-orange-5 {
-  border-color: #CD4A02;
-}
-
-/* 黄色 */
-
-.ag-yellow-1 {
-  color: #FFCF5D;
-}
-
-.ag-bg-yellow-1 {
-  background-color: #FFCF5D;
-}
-
-.ag-border-yellow-1 {
-  border-color: #FFCF5D;
-}
-
-.ag-yellow-2 {
-  color: #FFC63D;
-}
-
-.ag-bg-yellow-2 {
-  background-color: #FFC63D;
-}
-
-.ag-border-yellow-2 {
-  border-color: #FFC63D;
-}
-
-.ag-yellow-3 {
-  color: #FFB606;
-}
-
-.ag-bg-yellow-3 {
-  background-color: #FFB606;
-}
-
-.ag-border-yellow-3 {
-  border-color: #FFB606;
-}
-
-.ag-yellow-4 {
-  color: #F5AE07;
-}
-
-.ag-bg-yellow-4 {
-  background-color: #F5AE07;
-}
-
-.ag-border-yellow-4 {
-  border-color: #F5AE07;
-}
-
-.ag-yellow-5 {
-  color: #DF9D00;
-}
-
-.ag-bg-yellow-5 {
-  background-color: #DF9D00;
-}
-
-.ag-border-yellow-5 {
-  border-color: #DF9D00;
-}
-
-/* 绿色 */
-
-.ag-green-1 {
-  color: #BFF866;
-}
-
-.ag-bg-green-1 {
-  background-color: #BFF866;
-}
-
-.ag-border-green-1 {
-  border-color: #BFF866;
-}
-
-.ag-green-2 {
-  color: #B9EB40;
-}
-
-.ag-bg-green-2 {
-  background-color: #B9EB40;
-}
-
-.ag-border-green-2 {
-  border-color: #B9EB40;
-}
-
-.ag-green-3 {
-  color: #A0D521;
-}
-
-.ag-bg-green-3 {
-  background-color: #A0D521;
-}
-
-.ag-border-green-3 {
-  border-color: #A0D521;
-}
-
-.ag-green-4 {
-  color: #8EC30E;
-}
-
-.ag-bg-green-4 {
-  background-color: #8EC30E;
-}
-
-.ag-border-green-4 {
-  border-color: #8EC30E;
-}
-
-.ag-green-5 {
-  color: #79AA04;
-}
-
-.ag-bg-green-5 {
-  background-color: #79AA04;
-}
-
-.ag-border-green-5 {
-  border-color: #79AA04;
-}
-
-/* 青色 */
-
-.ag-cyan-1 {
-  color: #85F9FD;
-}
-
-.ag-bg-cyan-1 {
-  background-color: #85F9FD;
-}
-
-.ag-border-cyan-1 {
-  border-color: #85F9FD;
-}
-
-.ag-cyan-2 {
-  color: #61F0F5;
-}
-
-.ag-bg-cyan-2 {
-  background-color: #61F0F5;
-}
-
-.ag-border-cyan-2 {
-  border-color: #61F0F5;
-}
-
-.ag-cyan-3 {
-  color: #1DDAE1;
-}
-
-.ag-bg-cyan-3 {
-  background-color: #1DDAE1;
-}
-
-.ag-border-cyan-3 {
-  border-color: #1DDAE1;
-}
-
-.ag-cyan-4 {
-  color: #19C7CD;
-}
-
-.ag-bg-cyan-4 {
-  background-color: #19C7CD;
-}
-
-.ag-border-cyan-4 {
-  border-color: #19C7CD;
-}
-
-.ag-cyan-5 {
-  color: #08B3B9;
-}
-
-.ag-bg-cyan-5 {
-  background-color: #08B3B9;
-}
-
-.ag-border-cyan-5 {
-  border-color: #08B3B9;
-}
-
-/* 蓝色 */
-
-.ag-blue-1 {
-  color: #83CBFF;
-}
-
-.ag-bg-blue-1 {
-  background-color: #83CBFF;
-}
-
-.ag-border-blue-1 {
-  border-color: #83CBFF;
-}
-
-.ag-blue-2 {
-  color: #5CBBFF;
-}
-
-.ag-bg-blue-2 {
-  background-color: #5CBBFF;
-}
-
-.ag-border-blue-2 {
-  border-color: #5CBBFF;
-}
-
-.ag-blue-3 {
-  color: #30A8FF;
-}
-
-.ag-bg-blue-3 {
-  background-color: #30A8FF;
-}
-
-.ag-border-blue-3 {
-  border-color: #30A8FF;
-}
-
-.ag-blue-4 {
-  color: #0A8BE8;
-}
-
-.ag-bg-blue-4 {
-  background-color: #0A8BE8;
-}
-
-.ag-border-blue-4 {
-  border-color: #0A8BE8;
-}
-
-.ag-blue-5 {
-  color: #0770D2;
-}
-
-.ag-bg-blue-5 {
-  background-color: #0770D2;
-}
-
-.ag-border-blue-5 {
-  border-color: #0770D2;
-}
-
-/* 紫色 */
-
-.ag-purple-1 {
-  color: #D5BAFB;
-}
-
-.ag-bg-purple-1 {
-  background-color: #D5BAFB;
-}
-
-.ag-border-purple-1 {
-  border-color: #D5BAFB;
-}
-
-.ag-purple-2 {
-  color: #BA8FF8;
-}
-
-.ag-bg-purple-2 {
-  background-color: #BA8FF8;
-}
-
-.ag-border-purple-2 {
-  border-color: #BA8FF8;
-}
-
-.ag-purple-3 {
-  color: #9E62F6;
-}
-
-.ag-bg-purple-3 {
-  background-color: #9E62F6;
-}
-
-.ag-border-purple-3 {
-  border-color: #9E62F6;
-}
-
-.ag-purple-4 {
-  color: #863EEF;
-}
-
-.ag-bg-purple-4 {
-  background-color: #863EEF;
-}
-
-.ag-border-purple-4 {
-  border-color: #863EEF;
-}
-
-.ag-purple-5 {
-  color: #6A12EB;
-}
-
-.ag-bg-purple-5 {
-  background-color: #6A12EB;
-}
-
-.ag-border-purple-5 {
-  border-color: #6A12EB;
-}
-
-/* 灰色 */
-
-.ag-gray-1 {
-  color: #d8d8d8;
-}
-
-.ag-bg-gray-1 {
-  background-color: #d8d8d8;
-}
-
-.ag-border-gray-1 {
-  border-color: #d8d8d8;
-}
-
-.ag-gray-2 {
-  color: #b0b0b0;
-}
-
-.ag-bg-gray-2 {
-  background-color: #b0b0b0;
-}
-
-.ag-border-gray-2 {
-  border-color: #b0b0b0;
-}
-
-.ag-gray-3 {
-  color: #999999;
-}
-
-.ag-bg-gray-3 {
-  background-color: #999999;
-}
-
-.ag-border-gray-3 {
-  border-color: #999999;
-}
-
-.ag-gray-4 {
-  color: #666666;
-}
-
-.ag-bg-gray-4 {
-  background-color: #666666;
-}
-
-.ag-border-gray-4 {
-  border-color: #666666;
-}
-
-.ag-gray-5 {
-  color: #333333;
-}
-
-.ag-bg-gray-5 {
-  background-color: #333333;
-}
-
-.ag-border-gray-5 {
-  border-color: #333333;
-}
-
-/* 白色 */
-.ag-white {
-  color: #fff;
-}
-
-.ag-bg-white {
-  background-color: #fff;
-}
-
-.ag-border-white {
-  border-color: #fff;
-}
-
-/* 黑色 */
-.ag-black {
-  color: #000;
-}
-
-.ag-bg-black {
-  background-color: #000;
-}
-
-.ag-border-black {
-  border-color: #000;
-}
-
 /* 布局 */
 
 .ag-layout {
@@ -1231,7 +707,7 @@ input.ag-switch[type=checkbox]:checked + label.ag-switch-label.right::before {
   left: auto;
 }
 
-/* 下拉框 */
+/* select 下拉框 */
 
 /* chrome浏览器的input自动填充文本后的背景色默认是黄色 */
 /* 使用以下样式来覆盖原有的样式，更改了背景和字体颜色 */
@@ -1247,6 +723,7 @@ input.ag-switch[type=checkbox]:checked + label.ag-switch-label.right::before {
   height: 36px;
   border: 1px solid #CECECE; /* Chrome和Firefox里面的边框是不一样的，所以复写了一下 */
   color: #585858;
+  border-radius: 3px;
 }
 
 .ag-select:hover {
@@ -1254,6 +731,7 @@ input.ag-switch[type=checkbox]:checked + label.ag-switch-label.right::before {
 }
 
 .ag-select:disabled {
+  background-color: #F5F5F5;
   color: #A6A6A6;
   cursor: not-allowed;
 }
@@ -1263,3 +741,653 @@ input.ag-switch[type=checkbox]:checked + label.ag-switch-label.right::before {
 }
 
 
+
+/* Tag 标签 */
+
+.ag-tag {
+  border: 1px solid #E7E7E7;
+  border-radius: 3px;
+  padding: 4px 12px;
+  color: #585858;
+}
+
+.ag-tag.remove {
+  position: relative;
+  padding-right: 22px;
+}
+
+.ag-tag.remove .ag-tag-remove {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Badge 标记 */
+
+.ag-badge-host {
+  position: relative;
+}
+
+.ag-badge.dot {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+}
+
+.ag-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(40%, -50%);
+  display: block;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+
+
+/* Breadcrumb 面包屑 */
+
+.ag-breadcrumb {
+  padding: 0 2px;
+}
+
+.ag-breadcrumb a {
+  color: inherit;
+}
+
+.ag-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Progress 进度条 */
+
+.ag-progress {
+  display: inline-block;
+  min-width: 200px;
+  height: 6px;
+  background-color: #EEEEEE;
+  margin-right: 10px;
+}
+
+.ag-progress-bar {
+  width: 0;
+  height: 100%;
+  transition: width 0.2s ease;
+}
+
+
+/* Loading 加载 */
+
+.ag-loading {
+  display: inline-block;
+}
+
+.ag-loading .ag-loading-bar {
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  border: 2px solid #30A8FF;
+  /*-webkit-transform-origin: 50% 50%;*/
+  transform-origin: 50% 50%;
+  /*-webkit-animation: ag-loading 1.5s linear infinite;*/
+  animation: ag-loading 1.5s linear infinite;
+}
+
+.ag-loading .ag-loading-bar:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  width: 11px;
+  height: 11px;
+  border-radius: 10px;
+  background-color: #30A8FF;
+}
+
+/*@-webkit-keyframes ag-loading {*/
+  /*0% {*/
+    /*-webkit-transform:rotate(0deg);*/
+  /*}*/
+  /*100% {*/
+    /*-webkit-transform:rotate(360deg);*/
+  /*}*/
+/*}*/
+
+@keyframes ag-loading {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+
+/* 颜色样式 */
+
+/* 红色 */
+
+.ag-red-1 {
+  color: #FF7676;
+}
+
+.ag-bg-red-1 {
+  background-color: #FF7676;
+}
+
+.ag-border-red-1 {
+  border-color: #FF7676;
+}
+
+.ag-red-2 {
+  color: #FF5050;
+}
+
+.ag-bg-red-2 {
+  background-color: #FF5050;
+}
+
+.ag-border-red-2 {
+  border-color: #FF5050;
+}
+
+.ag-red-3 {
+  color: #ED2E2E;
+}
+
+.ag-bg-red-3 {
+  background-color: #ED2E2E;
+}
+
+.ag-border-red-3 {
+  border-color: #ED2E2E;
+}
+
+.ag-red-4 {
+  color: #DE1111;
+}
+
+.ag-bg-red-4 {
+  background-color: #DE1111;
+}
+
+.ag-border-red-4 {
+  border-color: #DE1111;
+}
+
+.ag-red-5 {
+  color: #C50505;
+}
+
+.ag-bg-red-5 {
+  background-color: #C50505;
+}
+
+.ag-border-red-5 {
+  border-color: #C50505;
+}
+
+/* 橙色 */
+
+.ag-orange-1 {
+  color: #FEB57F;
+}
+
+.ag-bg-orange-1 {
+  background-color: #FEB57F;
+}
+
+.ag-border-orange-1 {
+  border-color: #FEB57F;
+}
+
+.ag-orange-2 {
+  color: #FC9F5B;
+}
+
+.ag-bg-orange-2 {
+  background-color: #FC9F5B;
+}
+
+.ag-border-orange-2 {
+  border-color: #FC9F5B;
+}
+
+.ag-orange-3 {
+  color: #FF6B1A;
+}
+
+.ag-bg-orange-3 {
+  background-color: #FF6B1A;
+}
+
+.ag-border-orange-3 {
+  border-color: #FF6B1A;
+}
+
+.ag-orange-4 {
+  color: #E8641B;
+}
+
+.ag-bg-orange-4 {
+  background-color: #E8641B;
+}
+
+.ag-border-orange-4 {
+  border-color: #E8641B;
+}
+
+.ag-orange-5 {
+  color: #CD4A02;
+}
+
+.ag-bg-orange-5 {
+  background-color: #CD4A02;
+}
+
+.ag-border-orange-5 {
+  border-color: #CD4A02;
+}
+
+/* 黄色 */
+
+.ag-yellow-1 {
+  color: #FFCF5D;
+}
+
+.ag-bg-yellow-1 {
+  background-color: #FFCF5D;
+}
+
+.ag-border-yellow-1 {
+  border-color: #FFCF5D;
+}
+
+.ag-yellow-2 {
+  color: #FFC63D;
+}
+
+.ag-bg-yellow-2 {
+  background-color: #FFC63D;
+}
+
+.ag-border-yellow-2 {
+  border-color: #FFC63D;
+}
+
+.ag-yellow-3 {
+  color: #FFB606;
+}
+
+.ag-bg-yellow-3 {
+  background-color: #FFB606;
+}
+
+.ag-border-yellow-3 {
+  border-color: #FFB606;
+}
+
+.ag-yellow-4 {
+  color: #F5AE07;
+}
+
+.ag-bg-yellow-4 {
+  background-color: #F5AE07;
+}
+
+.ag-border-yellow-4 {
+  border-color: #F5AE07;
+}
+
+.ag-yellow-5 {
+  color: #DF9D00;
+}
+
+.ag-bg-yellow-5 {
+  background-color: #DF9D00;
+}
+
+.ag-border-yellow-5 {
+  border-color: #DF9D00;
+}
+
+/* 绿色 */
+
+.ag-green-1 {
+  color: #BFF866;
+}
+
+.ag-bg-green-1 {
+  background-color: #BFF866;
+}
+
+.ag-border-green-1 {
+  border-color: #BFF866;
+}
+
+.ag-green-2 {
+  color: #B9EB40;
+}
+
+.ag-bg-green-2 {
+  background-color: #B9EB40;
+}
+
+.ag-border-green-2 {
+  border-color: #B9EB40;
+}
+
+.ag-green-3 {
+  color: #A0D521;
+}
+
+.ag-bg-green-3 {
+  background-color: #A0D521;
+}
+
+.ag-border-green-3 {
+  border-color: #A0D521;
+}
+
+.ag-green-4 {
+  color: #8EC30E;
+}
+
+.ag-bg-green-4 {
+  background-color: #8EC30E;
+}
+
+.ag-border-green-4 {
+  border-color: #8EC30E;
+}
+
+.ag-green-5 {
+  color: #79AA04;
+}
+
+.ag-bg-green-5 {
+  background-color: #79AA04;
+}
+
+.ag-border-green-5 {
+  border-color: #79AA04;
+}
+
+/* 青色 */
+
+.ag-cyan-1 {
+  color: #85F9FD;
+}
+
+.ag-bg-cyan-1 {
+  background-color: #85F9FD;
+}
+
+.ag-border-cyan-1 {
+  border-color: #85F9FD;
+}
+
+.ag-cyan-2 {
+  color: #61F0F5;
+}
+
+.ag-bg-cyan-2 {
+  background-color: #61F0F5;
+}
+
+.ag-border-cyan-2 {
+  border-color: #61F0F5;
+}
+
+.ag-cyan-3 {
+  color: #1DDAE1;
+}
+
+.ag-bg-cyan-3 {
+  background-color: #1DDAE1;
+}
+
+.ag-border-cyan-3 {
+  border-color: #1DDAE1;
+}
+
+.ag-cyan-4 {
+  color: #19C7CD;
+}
+
+.ag-bg-cyan-4 {
+  background-color: #19C7CD;
+}
+
+.ag-border-cyan-4 {
+  border-color: #19C7CD;
+}
+
+.ag-cyan-5 {
+  color: #08B3B9;
+}
+
+.ag-bg-cyan-5 {
+  background-color: #08B3B9;
+}
+
+.ag-border-cyan-5 {
+  border-color: #08B3B9;
+}
+
+/* 蓝色 */
+
+.ag-blue-1 {
+  color: #83CBFF;
+}
+
+.ag-bg-blue-1 {
+  background-color: #83CBFF;
+}
+
+.ag-border-blue-1 {
+  border-color: #83CBFF;
+}
+
+.ag-blue-2 {
+  color: #5CBBFF;
+}
+
+.ag-bg-blue-2 {
+  background-color: #5CBBFF;
+}
+
+.ag-border-blue-2 {
+  border-color: #5CBBFF;
+}
+
+.ag-blue-3 {
+  color: #30A8FF;
+}
+
+.ag-bg-blue-3 {
+  background-color: #30A8FF;
+}
+
+.ag-border-blue-3 {
+  border-color: #30A8FF;
+}
+
+.ag-blue-4 {
+  color: #0A8BE8;
+}
+
+.ag-bg-blue-4 {
+  background-color: #0A8BE8;
+}
+
+.ag-border-blue-4 {
+  border-color: #0A8BE8;
+}
+
+.ag-blue-5 {
+  color: #0770D2;
+}
+
+.ag-bg-blue-5 {
+  background-color: #0770D2;
+}
+
+.ag-border-blue-5 {
+  border-color: #0770D2;
+}
+
+/* 紫色 */
+
+.ag-purple-1 {
+  color: #D5BAFB;
+}
+
+.ag-bg-purple-1 {
+  background-color: #D5BAFB;
+}
+
+.ag-border-purple-1 {
+  border-color: #D5BAFB;
+}
+
+.ag-purple-2 {
+  color: #BA8FF8;
+}
+
+.ag-bg-purple-2 {
+  background-color: #BA8FF8;
+}
+
+.ag-border-purple-2 {
+  border-color: #BA8FF8;
+}
+
+.ag-purple-3 {
+  color: #9E62F6;
+}
+
+.ag-bg-purple-3 {
+  background-color: #9E62F6;
+}
+
+.ag-border-purple-3 {
+  border-color: #9E62F6;
+}
+
+.ag-purple-4 {
+  color: #863EEF;
+}
+
+.ag-bg-purple-4 {
+  background-color: #863EEF;
+}
+
+.ag-border-purple-4 {
+  border-color: #863EEF;
+}
+
+.ag-purple-5 {
+  color: #6A12EB;
+}
+
+.ag-bg-purple-5 {
+  background-color: #6A12EB;
+}
+
+.ag-border-purple-5 {
+  border-color: #6A12EB;
+}
+
+/* 灰色 */
+
+.ag-gray-1 {
+  color: #d8d8d8;
+}
+
+.ag-bg-gray-1 {
+  background-color: #d8d8d8;
+}
+
+.ag-border-gray-1 {
+  border-color: #d8d8d8;
+}
+
+.ag-gray-2 {
+  color: #b0b0b0;
+}
+
+.ag-bg-gray-2 {
+  background-color: #b0b0b0;
+}
+
+.ag-border-gray-2 {
+  border-color: #b0b0b0;
+}
+
+.ag-gray-3 {
+  color: #999999;
+}
+
+.ag-bg-gray-3 {
+  background-color: #999999;
+}
+
+.ag-border-gray-3 {
+  border-color: #999999;
+}
+
+.ag-gray-4 {
+  color: #666666;
+}
+
+.ag-bg-gray-4 {
+  background-color: #666666;
+}
+
+.ag-border-gray-4 {
+  border-color: #666666;
+}
+
+.ag-gray-5 {
+  color: #333333;
+}
+
+.ag-bg-gray-5 {
+  background-color: #333333;
+}
+
+.ag-border-gray-5 {
+  border-color: #333333;
+}
+
+/* 白色 */
+.ag-white {
+  color: #fff;
+}
+
+.ag-bg-white {
+  background-color: #fff;
+}
+
+.ag-border-white {
+  border-color: #fff;
+}
+
+/* 黑色 */
+.ag-black {
+  color: #000;
+}
+
+.ag-bg-black {
+  background-color: #000;
+}
+
+.ag-border-black {
+  border-color: #000;
+}

@@ -1,0 +1,16 @@
+/* Progress 进度条 */
+
+.ag-progress {
+  display: inline-block;
+  min-width: 200px;
+  height: 6px;
+  background-color: #EEEEEE;
+  margin-right: 10px;
+}
+
+.ag-progress-bar {
+  width: 0;
+  height: 100%;
+  transition: width 0.2s ease;
+}
+

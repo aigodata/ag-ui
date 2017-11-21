@@ -1,0 +1,21 @@
+/* Tag 标签 */
+
+.ag-tag {
+  border: 1px solid #E7E7E7;
+  border-radius: 3px;
+  padding: 4px 12px;
+  color: #585858;
+}
+
+.ag-tag.remove {
+  position: relative;
+  padding-right: 22px;
+}
+
+.ag-tag.remove .ag-tag-remove {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}

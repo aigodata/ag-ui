@@ -1,0 +1,24 @@
+/* Badge 标记 */
+
+.ag-badge-host {
+  position: relative;
+}
+
+.ag-badge.dot {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+}
+
+.ag-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(40%, -50%);
+  display: block;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+

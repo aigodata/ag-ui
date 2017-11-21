@@ -222,10 +222,17 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: 46px;
   left: 78px;
+  bottom: 46px;
   width: 240px;
   border: 1px solid #e7e7e7;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 0px 15px 20px;
+}
+
+.rx-visual .rx-sidebar ul {
+  height: 100%;
+  overflow: auto;
+  width: 100%;
 }
 
 .rx-visual .rx-sidebar ul li a {
@@ -863,4 +870,42 @@ code {
 .select-wrap select {
   margin-right: 20px;
   width: 200px;
+}
+
+.tag-wrap {
+  padding: 10px;
+}
+
+.tag-wrap .ag-tag {
+  margin-right: 10px;
+}
+
+.tag-wrap > div:first-child {
+  margin-bottom: 20px;
+}
+
+.tag-wrap .ag-tag[active] {
+  display: none;
+}
+
+.code-wrap {
+  padding: 10px;
+}
+
+.code-wrap .ag-badge-host {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.code-wrap .ag-badge-host .ag-button {
+  padding: 5px 20px;
+  border-radius: 3px;
+}
+
+.code-wrap.progress>div {
+  margin-bottom: 10px;
+}
+
+.code-wrap.progress>div .ag-progress {
+  width: 400px;
 }

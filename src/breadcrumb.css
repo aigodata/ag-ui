@@ -1,0 +1,15 @@
+/* Breadcrumb 面包屑 */
+
+.ag-breadcrumb {
+  padding: 0 2px;
+}
+
+.ag-breadcrumb a {
+  color: inherit;
+}
+
+.ag-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+

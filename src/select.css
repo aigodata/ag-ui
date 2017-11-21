@@ -1,4 +1,4 @@
-/* 下拉框 */
+/* select 下拉框 */
 
 /* chrome浏览器的input自动填充文本后的背景色默认是黄色 */
 /* 使用以下样式来覆盖原有的样式，更改了背景和字体颜色 */
@@ -14,6 +14,7 @@
   height: 36px;
   border: 1px solid #CECECE; /* Chrome和Firefox里面的边框是不一样的，所以复写了一下 */
   color: #585858;
+  border-radius: 3px;
 }
 
 .ag-select:hover {
@@ -21,6 +22,7 @@
 }
 
 .ag-select:disabled {
+  background-color: #F5F5F5;
   color: #A6A6A6;
   cursor: not-allowed;
 }

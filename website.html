@@ -61,6 +61,21 @@
         <li>
           <a href="#select">Select 下拉框</a>
         </li>
+        <li>
+          <a href="#tag">Tag 标签</a>
+        </li>
+        <li>
+          <a href="#badge">Badge 标记</a>
+        </li>
+        <li>
+          <a href="#breadcrumb">Breadcrumb 面包屑</a>
+        </li>
+        <li>
+          <a href="#progress">Progress 进度条</a>
+        </li>
+        <li>
+          <a href="#loading">Loading 加载</a>
+        </li>
       </ul>
     </div>
     <!--右侧-->
@@ -70,13 +85,18 @@
         <!--标题-->
         <div class="rx-tit">
           <h2>快速上手</h2>
-          <a target="_blank" style="color:inherit;" href="/website.html/github.com/aigodata/ag-ui"><i
-            class="icon iconfont icon-github"></i></a>
+          <a target="_blank" style="color:inherit;" href="//github.com/aigodata/ag-ui">
+            <i class="icon iconfont icon-github"></i>
+          </a>
         </div>
         <!--每段描述-->
         <div>
+          <h3>前言</h3>
+          <p>ag-ui的设计思路就是尽量"包容", "低侵入", 不想重复造轮子(成为UI框架), 也不想站队(依赖前端框架), 它只是"代码模板", 简单易修改.</p>
+        </div>
+        <div>
           <h3>自我介绍</h3>
-          <p>ag-ui是一套UI工具箱, 追求的是易用简单.</p>
+          <p>ag-ui是一套尽可能灵活的UI工具包, 我们倾向简单的原生语法, 复杂的UI组件则建议选用成熟开源作品.</p>
         </div>
         <!--每段描述-->
         <div>
@@ -85,8 +105,8 @@
         </div>
         <!--每段描述-->
         <div>
-          <h3>github</h3>
-          <p><a href="/website.html/github.com/aigodata/ag-ui">https://github.com/aigodata/ag-ui</a></p>
+          <h3>免费开源</h3>
+          <p><a target="_blank" href="//github.com/aigodata/ag-ui">https://github.com/aigodata/ag-ui</a></p>
         </div>
         <!--每段描述-->
         <div>
@@ -1299,6 +1319,368 @@ font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Micros
               </div>
               <!--按钮-->
               <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="select-code-1">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- tag -->
+      <div id="tag" class="rx-each-item">
+        <!--标题-->
+        <div class="rx-tit">
+          <h2>Tag 标签</h2>
+          <!--<p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
+        </div>
+        <!--每个条目 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <!--<p class="explain">默认的select下拉框</p>-->
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="tag-wrap">
+                  <div>
+                    <span class="ag-tag">标签一</span>
+                    <span class="ag-tag ag-bg-blue-3 ag-border-blue-3 ag-white">标签二</span>
+                    <span class="ag-tag ag-bg-orange-3 ag-border-orange-3 ag-white">标签三</span>
+                    <span class="ag-tag ag-bg-red-3 ag-border-red-3 ag-white">标签四</span>
+                    <span class="ag-tag ag-bg-green-3 ag-border-green-3 ag-white">标签五</span>
+                  </div>
+                  <div>
+                    <span class="ag-tag remove" tag-target-1>
+                      标签一<i class="icon iconfont icon-guanbi ag-tag-remove" ag-click target="tag-target-1"></i>
+                    </span>
+                    <span class="ag-tag remove ag-bg-blue-3 ag-border-blue-3 ag-white" tag-target-2>
+                      标签二<i class="icon iconfont icon-guanbi ag-tag-remove" ag-click target="tag-target-2"></i>
+                    </span>
+                    <span class="ag-tag remove ag-bg-orange-3 ag-border-orange-3 ag-white" tag-target-3>
+                      标签三<i class="icon iconfont icon-guanbi ag-tag-remove" ag-click target="tag-target-3"></i>
+                    </span>
+                    <span class="ag-tag remove ag-bg-red-3 ag-border-red-3 ag-white" tag-target-4>
+                      标签四<i class="icon iconfont icon-guanbi ag-tag-remove" ag-click target="tag-target-4"></i>
+                    </span>
+                    <span class="ag-tag remove ag-bg-green-3 ag-border-green-3 ag-white" tag-target-5>
+                      标签五<i class="icon iconfont icon-guanbi ag-tag-remove" ag-click target="tag-target-5"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" tag-code-1>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".tag-code-1">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius tag-code-1 css html">
+&lt;div&gt;
+  &lt;span class=&quot;ag-tag&quot;&gt;标签一&lt;/span&gt;
+  &lt;span class=&quot;ag-tag ag-bg-blue-3 ag-border-blue-3 ag-white&quot;&gt;标签二&lt;/span&gt;
+  &lt;span class=&quot;ag-tag ag-bg-orange-3 ag-border-orange-3 ag-white&quot;&gt;标签三&lt;/span&gt;
+  &lt;span class=&quot;ag-tag ag-bg-red-3 ag-border-red-3 ag-white&quot;&gt;标签四&lt;/span&gt;
+  &lt;span class=&quot;ag-tag ag-bg-green-3 ag-border-green-3 ag-white&quot;&gt;标签五&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span class=&quot;ag-tag remove&quot; tag-target-1&gt;
+    标签一&lt;i class=&quot;icon iconfont icon-guanbi ag-tag-remove&quot; ag-click target=&quot;tag-target-1&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;ag-tag remove ag-bg-blue-3 ag-border-blue-3 ag-white&quot; tag-target-2&gt;
+    标签二&lt;i class=&quot;icon iconfont icon-guanbi ag-tag-remove&quot; ag-click target=&quot;tag-target-2&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;ag-tag remove ag-bg-orange-3 ag-border-orange-3 ag-white&quot; tag-target-3&gt;
+    标签三&lt;i class=&quot;icon iconfont icon-guanbi ag-tag-remove&quot; ag-click target=&quot;tag-target-3&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;ag-tag remove ag-bg-red-3 ag-border-red-3 ag-white&quot; tag-target-4&gt;
+    标签四&lt;i class=&quot;icon iconfont icon-guanbi ag-tag-remove&quot; ag-click target=&quot;tag-target-4&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;ag-tag remove ag-bg-green-3 ag-border-green-3 ag-white&quot; tag-target-5&gt;
+    标签五&lt;i class=&quot;icon iconfont icon-guanbi ag-tag-remove&quot; ag-click target=&quot;tag-target-5&quot;&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="tag-code-1">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- badge -->
+      <div id="badge" class="rx-each-item">
+        <!--标题-->
+        <div class="rx-tit">
+          <h2>Badge 标记</h2>
+          <!--<p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
+        </div>
+        <!--每个条目 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <!--<p class="explain">默认的select下拉框</p>-->
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="code-wrap">
+
+                  <div class="ag-badge-host">
+                    <a class="ag-button bg-blue ag-white">normal</a>
+                    <div class="ag-badge dot ag-bg-red-3 ag-white"></div>
+                  </div>
+
+                  <div class="ag-badge-host">
+                    <a class="ag-button bg-blue ag-white">normal</a>
+                    <div class="ag-badge ag-bg-red-3 ag-white">9</div>
+                  </div>
+
+                  <div class="ag-badge-host">
+                    <a class="ag-button bg-blue ag-white">normal</a>
+                    <div class="ag-badge ag-bg-red-3 ag-white">99+</div>
+                  </div>
+
+                  <div class="ag-badge-host">
+                    <a class="ag-button bg-blue ag-white">normal</a>
+                    <div class="ag-badge ag-bg-red-3 ag-white">999+</div>
+                  </div>
+
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" badge-code-1>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".badge-code-1">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius badge-code-1 css html">
+&lt;div class=&quot;ag-badge-host&quot;&gt;
+  &lt;a class=&quot;ag-button bg-blue ag-white&quot;&gt;normal&lt;/a&gt;
+  &lt;div class=&quot;ag-badge dot ag-bg-red-3 ag-white&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ag-badge-host&quot;&gt;
+  &lt;a class=&quot;ag-button bg-blue ag-white&quot;&gt;normal&lt;/a&gt;
+  &lt;div class=&quot;ag-badge ag-bg-red-3 ag-white&quot;&gt;9&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ag-badge-host&quot;&gt;
+  &lt;a class=&quot;ag-button bg-blue ag-white&quot;&gt;normal&lt;/a&gt;
+  &lt;div class=&quot;ag-badge ag-bg-red-3 ag-white&quot;&gt;99+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;ag-badge-host&quot;&gt;
+  &lt;a class=&quot;ag-button bg-blue ag-white&quot;&gt;normal&lt;/a&gt;
+  &lt;div class=&quot;ag-badge ag-bg-red-3 ag-white&quot;&gt;999+&lt;/div&gt;
+&lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="badge-code-1">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- breadcrumb -->
+      <div id="breadcrumb" class="rx-each-item">
+        <!--标题-->
+        <div class="rx-tit">
+          <h2>Breadcrumb 面包屑</h2>
+          <!--<p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
+        </div>
+        <!--每个条目 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <!--<p class="explain">默认的select下拉框</p>-->
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="code-wrap">
+
+                  <span class="ag-breadcrumb">
+                    <a href="javascript:void(0)">首页</a>
+                  </span>
+                  <span class="ag-breadcrumb">/</span>
+                  <span class="ag-breadcrumb">
+                    <a href="javascript:void(0)">产品展示</a>
+                  </span>
+                  <span class="ag-breadcrumb">/</span>
+                  <span class="ag-breadcrumb">
+                    <a href="javascript:void(0)">产品详情</a>
+                  </span>
+
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" crumb-code-1>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".crumb-code-1">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius crumb-code-1 css html">
+&lt;span class=&quot;ag-breadcrumb&quot;&gt;
+  &lt;a href=&quot;javascript:void(0)&quot;&gt;首页&lt;/a&gt;
+&lt;/span&gt;
+&lt;span class=&quot;ag-breadcrumb&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;ag-breadcrumb&quot;&gt;
+  &lt;a href=&quot;javascript:void(0)&quot;&gt;产品展示&lt;/a&gt;
+&lt;/span&gt;
+&lt;span class=&quot;ag-breadcrumb&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;ag-breadcrumb&quot;&gt;
+  &lt;a href=&quot;javascript:void(0)&quot;&gt;产品详情&lt;/a&gt;
+&lt;/span&gt;
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="crumb-code-1">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- progress -->
+      <div id="progress" class="rx-each-item">
+        <!--标题-->
+        <div class="rx-tit">
+          <h2>Progress 进度条</h2>
+          <!--<p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
+        </div>
+        <!--每个条目 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <!--<p class="explain">水平进度条</p>-->
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="code-wrap progress">
+
+                  <div>
+                    <div class="ag-progress">
+                      <div class="ag-progress-bar ag-bg-blue-3" style="width: 70%;"></div>
+                    </div>70%
+                  </div>
+
+                  <div>
+                    <div class="ag-progress">
+                      <div class="ag-progress-bar ag-bg-purple-3" style="width: 60%;"></div>
+                    </div>60%
+                  </div>
+
+                  <div>
+                    <div class="ag-progress">
+                      <div class="ag-progress-bar ag-bg-orange-3" style="width: 50%;"></div>
+                    </div>50%
+                  </div>
+
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" progress-code-1>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".progress-code-1">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius progress-code-1 css html">
+&lt;select class=&quot;ag-select&quot; name=&quot;select&quot;&gt;
+  &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;
+  &lt;option value=&quot;saab&quot; selected&gt;Saab&lt;/option&gt;
+  &lt;option value=&quot;opel&quot;&gt;Opel&lt;/option&gt;
+  &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class=&quot;ag-select&quot; name=&quot;select&quot; disabled&gt;
+  &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;
+  &lt;option value=&quot;saab&quot; selected&gt;Saab&lt;/option&gt;
+  &lt;option value=&quot;opel&quot;&gt;Opel&lt;/option&gt;
+  &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;
+&lt;/select&gt;
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="progress-code-1">
+                <span class="show">显示代码</span>
+                <span class="hide">隐藏代码</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- loading -->
+      <div id="loading" class="rx-each-item">
+        <!--标题-->
+        <div class="rx-tit">
+          <h2>Loading 加载</h2>
+          <!--<p>我们提供了通用的<a href="javascript:void(0)">项目模板</a>，你可以直接使用</p>-->
+        </div>
+        <!--每个条目 -->
+        <div>
+          <h3></h3>
+          <!--布局示例-->
+          <div class="rx-demo-layout">
+            <!--说明-->
+            <!--<p class="explain">默认的select下拉框</p>-->
+            <!--示例代码-->
+            <div class="example-wrap">
+              <div class="code-example-wrap">
+                <div class="code-wrap">
+
+                  <div class="ag-loading">
+                    <div class="ag-loading-bar"></div>
+                  </div>
+
+                </div>
+              </div>
+              <!--代码块-->
+              <div class="rx-relative code-block" loading-code-1>
+                <!--复制icon-->
+                <a href="javascript:void(0)" class="copy"
+                   data-clipboard-demo data-clipboard-action="copy"
+                   data-clipboard-target=".loading-code-1">
+                  <i class="icon iconfont icon-fuzhi"></i>
+                </a>
+                <pre class="rx-border-top">
+                  <code class="rx-clear-radius loading-code-1 css html">
+&lt;div class=&quot;ag-loading&quot;&gt;
+  &lt;div class=&quot;ag-loading-bar&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+              <!--按钮-->
+              <a href="javascript:void(0)" class="toggle-btn" ag-click toggle target="loading-code-1">
                 <span class="show">显示代码</span>
                 <span class="hide">隐藏代码</span>
               </a>

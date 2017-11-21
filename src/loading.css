@@ -1,0 +1,45 @@
+/* Loading 加载 */
+
+.ag-loading {
+  display: inline-block;
+}
+
+.ag-loading .ag-loading-bar {
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  border: 2px solid #30A8FF;
+  /*-webkit-transform-origin: 50% 50%;*/
+  transform-origin: 50% 50%;
+  /*-webkit-animation: ag-loading 1.5s linear infinite;*/
+  animation: ag-loading 1.5s linear infinite;
+}
+
+.ag-loading .ag-loading-bar:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  width: 11px;
+  height: 11px;
+  border-radius: 10px;
+  background-color: #30A8FF;
+}
+
+/*@-webkit-keyframes ag-loading {*/
+  /*0% {*/
+    /*-webkit-transform:rotate(0deg);*/
+  /*}*/
+  /*100% {*/
+    /*-webkit-transform:rotate(360deg);*/
+  /*}*/
+/*}*/
+
+@keyframes ag-loading {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
