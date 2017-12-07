@@ -1,0 +1,1501 @@
+/* 方便书写的基础样式 */
+
+.ag-fl {
+  float: left;
+}
+
+.ag-fr {
+  float: right;
+}
+
+.ag-clearfix:after {
+  clear: both;
+}
+
+.ag-pointer {
+  cursor: pointer;
+}
+
+.ag-hide {
+  display: none;
+}
+
+.ag-relative {
+  position: relative;
+}
+
+.ag-absolute {
+  position: absolute;
+}
+
+.ag-text-center {
+  text-align: center;
+}
+
+.ag-text-left {
+  text-align: left;
+}
+
+.ag-text-right {
+  text-align: right;
+}
+
+/* 字体 */
+
+* {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+
+/* 布局 */
+
+.ag-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ag-shrink {
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+}
+
+.ag-grow-auto {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+/* 按钮 */
+
+.ag-button {
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px 36px;
+  font-size: 13px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* a链接情况 */
+
+a.ag-button,
+a.ag-button:hover,
+a.ag-button:active {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+}
+
+/* 圆角 */
+
+.ag-button.round {
+  border-radius: 25px;
+}
+
+/* 支持图标 */
+
+.ag-button i {
+  font-size: 14px;
+}
+
+.ag-button i + span {
+  padding-left: 5px;
+}
+
+/* 文字按钮 */
+
+.ag-button.text {
+  border: 0;
+  padding: 0;
+}
+
+/* 背景色风格 */
+
+.ag-button.bg-red {
+  background-color: #ED2E2E;
+  border-color: #ED2E2E;
+}
+.ag-button.bg-red:hover {
+  background-color: #FF5050;
+  border-color: #FF5050;
+}
+.ag-button.bg-red:active {
+  background-color: #DE1111;
+  border-color: #DE1111;
+}
+
+.ag-button.bg-orange {
+  background-color: #FF6B1A;
+  border-color: #FF6B1A;
+}
+.ag-button.bg-orange:hover {
+  background-color: #FC9F5B;
+  border-color: #FC9F5B;
+}
+.ag-button.bg-orange:active {
+  background-color: #E8641B;
+  border-color: #E8641B;
+}
+
+.ag-button.bg-yellow {
+  background-color: #FFB606;
+  border-color: #FFB606;
+}
+.ag-button.bg-yellow:hover {
+  background-color: #FFC63D;
+  border-color: #FFC63D;
+}
+.ag-button.bg-yellow:active {
+  background-color: #F5AE07;
+  border-color: #F5AE07;
+}
+
+.ag-button.bg-green {
+  background-color: #A0D521;
+  border-color: #A0D521;
+}
+.ag-button.bg-green:hover {
+  background-color: #B9EB40;
+  border-color: #B9EB40;
+}
+.ag-button.bg-green:active {
+  background-color: #8EC30E;
+  border-color: #8EC30E;
+}
+
+.ag-button.bg-blue {
+  background-color: #30A8FF;
+  border-color: #30A8FF;
+}
+.ag-button.bg-blue:hover {
+  background-color: #5CBBFF;
+  border-color: #5CBBFF;
+}
+.ag-button.bg-blue:active {
+  background-color: #0A8BE8;
+  border-color: #0A8BE8;
+}
+
+.ag-button.bg-gray {
+  background-color: #999999;
+  border-color: #999999;
+}
+.ag-button.bg-gray:hover {
+  background-color: #b0b0b0;
+  border-color: #b0b0b0;
+}
+.ag-button.bg-gray:active {
+  background-color: #666666;
+  border-color: #666666;
+}
+
+/* 边框色风格 */
+
+.ag-button.border-red {
+  border-color: #ED2E2E;
+}
+.ag-button.border-red:hover {
+  background-color: #ED2E2E;
+  border-color: #ED2E2E;
+  color: #fff;
+}
+.ag-button.border-red:active {
+  background-color: #DE1111;
+  border-color: #DE1111;
+  color: #fff;
+}
+
+.ag-button.border-orange {
+  border-color: #FF6B1A;
+}
+.ag-button.border-orange:hover {
+  background-color: #FF6B1A;
+  border-color: #FF6B1A;
+  color: #fff;
+}
+.ag-button.border-orange:active {
+  background-color: #E8641B;
+  border-color: #E8641B;
+  color: #fff;
+}
+
+.ag-button.border-yellow {
+  border-color: #FFB606;
+}
+.ag-button.border-yellow:hover {
+  background-color: #FFB606;
+  border-color: #FFB606;
+  color: #fff;
+}
+.ag-button.border-yellow:active {
+  background-color: #F5AE07;
+  border-color: #F5AE07;
+  color: #fff;
+}
+
+.ag-button.border-green {
+  border-color: #A0D521;
+}
+.ag-button.border-green:hover {
+  background-color: #A0D521;
+  border-color: #A0D521;
+  color: #fff;
+}
+.ag-button.border-green:active {
+  background-color: #8EC30E;
+  border-color: #8EC30E;
+  color: #fff;
+}
+
+.ag-button.border-blue {
+   border-color: #30A8FF;
+ }
+.ag-button.border-blue:hover {
+  background-color: #30A8FF;
+  border-color: #30A8FF;
+  color: #fff;
+}
+.ag-button.border-blue:active {
+  background-color: #0A8BE8;
+  border-color: #0A8BE8;
+  color: #fff;
+}
+
+.ag-button.border-gray {
+  border-color: #999999;
+}
+.ag-button.border-gray:hover {
+  background-color: #999999;
+  border-color: #999999;
+  color: #fff;
+}
+.ag-button.border-gray:active {
+  background-color: #666666;
+  border-color: #666666;
+  color: #fff;
+}
+
+/* 文字风格 */
+
+.ag-button.red {
+  color: #ED2E2E;
+}
+.ag-button.red:hover {
+  color: #FF5050;
+}
+.ag-button.red:active {
+  color: #DE1111;
+}
+
+.ag-button.orange {
+  color: #FF6B1A;
+}
+.ag-button.orange:hover {
+  color: #FC9F5B;
+}
+.ag-button.orange:active {
+  color: #E8641B;
+}
+
+.ag-button.yellow {
+  color: #FFB606;
+}
+.ag-button.yellow:hover {
+  color: #FFC63D;
+}
+.ag-button.yellow:active {
+  color: #F5AE07;
+}
+
+.ag-button.green {
+  color: #A0D521;
+}
+.ag-button.green:hover {
+  color: #B9EB40;
+}
+.ag-button.green:active {
+  color: #8EC30E;
+}
+
+.ag-button.blue {
+  color: #30A8FF;
+}
+.ag-button.blue:hover {
+  color: #5CBBFF;
+}
+.ag-button.blue:active {
+  color: #0A8BE8;
+}
+
+.ag-button.gray {
+  color: #999999;
+}
+.ag-button.gray:hover {
+  color: #b0b0b0;
+}
+.ag-button.gray:active {
+  color: #666666;
+}
+
+/* 禁用状态 */
+
+.ag-button.disabled,
+.ag-button.disabled:hover,
+.ag-button.disabled:active {
+  cursor: not-allowed;
+  opacity: .5;
+  background-color: #b0b0b0;
+  border-color: #b0b0b0;
+}
+
+.ag-button.text.disabled,
+.ag-button.text.disabled:hover,
+.ag-button.text.disabled:active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #b0b0b0;
+}
+
+/* 按钮组 */
+
+.ag-button-group {
+  font-size: 0;
+  display: inline-block;
+}
+
+.ag-button-group .ag-button,
+.ag-button-group .ag-button:hover,
+.ag-button-group .ag-button:active {
+  margin: 0;
+  border-radius: 0;
+  border-right: 1px solid #ffffff;
+}
+
+.ag-button-group .ag-button:first-child {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.ag-button-group .ag-button:last-child {
+  border-right: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+
+/* 单选按钮 */
+.ag-radio {
+  display: none;
+}
+.ag-radio-label {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.ag-radio-label:before,
+.ag-radio-label:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  transform: translate(0,-50%);
+  border-radius: 50%;
+}
+/* 未选中 */
+input.ag-radio[type=radio]:not(:checked) + label.ag-radio-label:after {
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+}
+/* 选中 */
+input.ag-radio[type=radio]:checked + label.ag-radio-label:after {
+  padding: 0;
+  background: #fff;
+  border: 6px solid #30A8FF;
+}
+
+/* 禁用 */
+input.ag-radio[type=radio]:disabled + label.ag-radio-label {
+  cursor: not-allowed;
+}
+
+/* 禁用未选中 */
+input.ag-radio[type=radio]:disabled:not(:checked) + label.ag-radio-label:after {
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+/* 禁用选中 */
+input.ag-radio[type=radio]:disabled:checked + label.ag-radio-label:before {
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  z-index: 2;
+}
+input.ag-radio[type=radio]:disabled:checked + label.ag-radio-label:after {
+  padding: 0;
+  background: #9f9f9f;
+  border: 6px solid #fff;
+  z-index: 1;
+}
+
+/* 复选框样式 */
+
+.ag-checkbox {
+  display: none;
+}
+.ag-checkbox-label {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.ag-checkbox-label:before {
+  content: '';
+  position: absolute;
+  top: 49%;
+  left: 1px;
+  width: 4px;
+  height: 8px;
+  z-index: 1;
+  border-radius: 0;
+}
+.ag-checkbox-label:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  transform: translate(0,-50%);
+  border-radius: 3px;
+}
+
+/* 未选中 */
+input.ag-checkbox[type=checkbox]:not(:checked) + label.ag-checkbox-label:after {
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+}
+/* 选中 */
+input.ag-checkbox[type=checkbox]:checked + label.ag-checkbox-label::before {
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: translate(0,-50%) rotateZ(45deg);
+  transform-origin: 100% 100%;
+}
+input.ag-checkbox[type=checkbox]:checked + label.ag-checkbox-label:after {
+  padding: 0;
+  background: #30A8FF;
+}
+
+/* 禁用 */
+input.ag-checkbox[type=checkbox]:disabled + label.ag-checkbox-label {
+  cursor: not-allowed;
+}
+
+/* 禁用未选中 */
+input.ag-checkbox[type=checkbox]:disabled:not(:checked) + label.ag-checkbox-label:after {
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+/* 禁用选中 */
+input.ag-checkbox[type=checkbox]:disabled:checked + label.ag-checkbox-label:before {
+  border-right: 2px solid #9f9f9f;
+  border-bottom: 2px solid #9f9f9f;
+}
+input.ag-checkbox[type=checkbox]:disabled:checked + label.ag-checkbox-label:after {
+  padding: 0;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+/* 输入框样式 */
+
+/* chrome浏览器的input自动填充文本后的背景色默认是黄色 */
+/* 使用以下样式来覆盖原有的样式，更改了背景和字体颜色 */
+.ag-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+  -webkit-text-fill-color: #fff;
+  background-color: #fff;
+  background-image: none;
+}
+
+.ag-input {
+  outline: none;  /* 取消chrome浏览器的input获取焦点的默认辉光 */
+  padding: 10px;
+  color: #585858;
+  background: #fff;
+  border: 1px solid #CECECE;
+  border-radius: 3px;
+}
+
+.ag-input:focus {
+  border: 1px solid #30A8FF;
+}
+
+.ag-input:disabled {
+  cursor: not-allowed;
+  background-color: #F5F5F5;
+  border: 1px solid #CECECE;
+  color: #A6A6A6;
+}
+
+.ag-input::placeholder,
+.ag-input:-ms-input-placeholder,
+.ag-input::-moz-placeholder,
+.ag-input::-webkit-input-placeholder {
+  color: #A6A6A6;
+}
+
+.ag-input:disabled::placeholder,
+.ag-input:disabled:-ms-input-placeholder,
+.ag-input:disabled::-moz-placeholder,
+.ag-input:disabled::-webkit-input-placeholder {
+  color: #A6A6A6;
+}
+
+.ag-input-group {
+  position: relative;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.ag-input-group .ag-input-icon {
+  position: absolute;
+  top: 8px;
+}
+
+.ag-input-group .ag-input-icon.left {
+  left: 10px;
+}
+
+.ag-input-group .ag-input-icon.right {
+  right: 30px;
+}
+
+.ag-input-group .ag-input-icon.left + .ag-input {
+  padding-left: 30px;
+}
+
+.ag-input-group .ag-input-icon.right + .ag-input {
+  padding-right: 30px;
+}
+
+/* 文本域样式 */
+
+/* chrome浏览器的input自动填充文本后的背景色默认是黄色 */
+/* 使用以下样式来覆盖原有的样式，更改了背景和字体颜色 */
+.ag-textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+  -webkit-text-fill-color: #fff;
+  background-color: #fff;
+  background-image: none;
+}
+
+.ag-textarea {
+  outline: none;  /* 取消chrome浏览器的input获取焦点的默认辉光 */
+  padding: 10px;
+  color: #585858;
+  background: #fff;
+  border: 1px solid #CECECE;
+  border-radius: 3px;
+}
+
+.ag-textarea:focus {
+  border: 1px solid #30A8FF;
+}
+
+.ag-textarea:disabled {
+  cursor: not-allowed;
+  background-color: #F5F5F5;
+  border: 1px solid #CECECE;
+  color: #A6A6A6;
+}
+
+/* switch 开关 */
+
+.ag-switch {
+  display: none;
+}
+.ag-switch-label {
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.ag-switch-label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  z-index: 1;
+  border-radius: 8px;
+  transition: all .3s ease;
+}
+.ag-switch-label:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 40px;
+  height: 20px;
+  box-sizing: border-box;
+  transform: translate(0,-50%);
+  border-radius: 10px;
+}
+
+/* 未选中 */
+input.ag-switch[type=checkbox]:not(:checked) + label.ag-switch-label:before {
+  background-color: #fff;
+}
+input.ag-switch[type=checkbox]:not(:checked) + label.ag-switch-label:after {
+  background-color: #D8D8D8;
+}
+
+/* 选中 */
+input.ag-switch[type=checkbox]:checked + label.ag-switch-label::before {
+  left: 22px;
+  background-color: #fff;
+}
+input.ag-switch[type=checkbox]:checked + label.ag-switch-label:after {
+  background-color: #30A8FF;
+}
+
+/* 禁用 */
+input.ag-switch[type=checkbox]:disabled + label.ag-switch-label {
+  cursor: not-allowed;
+}
+
+/* 禁用未选中 */
+input.ag-switch[type=checkbox]:disabled:not(:checked) + label.ag-switch-label:before {
+  background-color: #fff;
+}
+input.ag-switch[type=checkbox]:disabled:not(:checked) + label.ag-switch-label:after {
+  background-color: #eeeeee;
+}
+
+/* 禁用选中 */
+input.ag-switch[type=checkbox]:disabled:checked + label.ag-switch-label:before {
+  background-color: #fff;
+}
+input.ag-switch[type=checkbox]:disabled:checked + label.ag-switch-label:after {
+  background-color: #afddff;
+}
+
+
+/* 右侧显示 */
+.ag-switch-label.right {
+  padding-right: 50px;
+  padding-left: 0;
+}
+.ag-switch-label.right:before {
+  right: 3px;
+  left: auto;
+}
+.ag-switch-label.right:after {
+  right: 0;
+  left: auto;
+}
+/* 选中 */
+input.ag-switch[type=checkbox]:checked + label.ag-switch-label.right::before {
+  right: 22px;
+  left: auto;
+}
+
+/* select 下拉框 */
+
+/* chrome浏览器的input自动填充文本后的背景色默认是黄色 */
+/* 使用以下样式来覆盖原有的样式，更改了背景和字体颜色 */
+.ag-select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+  -webkit-text-fill-color: #fff;
+  background-color: #fff;
+  background-image: none;
+}
+
+.ag-select {
+  outline: none; /* 取消chrome浏览器的input获取焦点的默认辉光 */
+  height: 36px;
+  border: 1px solid #CECECE; /* Chrome和Firefox里面的边框是不一样的，所以复写了一下 */
+  color: #585858;
+  border-radius: 3px;
+}
+
+.ag-select:hover {
+  border: 1px solid #30A8FF;
+}
+
+.ag-select:disabled {
+  background-color: #F5F5F5;
+  color: #A6A6A6;
+  cursor: not-allowed;
+}
+
+.ag-select:disabled:hover {
+  border: 1px solid #CECECE;
+}
+
+
+
+/* Tag 标签 */
+
+.ag-tag {
+  border: 1px solid #E7E7E7;
+  border-radius: 3px;
+  padding: 4px 12px;
+  color: #585858;
+}
+
+.ag-tag.remove {
+  position: relative;
+  padding-right: 22px;
+}
+
+.ag-tag.remove .ag-tag-remove {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Badge 标记 */
+
+.ag-badge-host {
+  position: relative;
+}
+
+.ag-badge.dot {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+}
+
+.ag-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(40%, -50%);
+  display: block;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+
+
+/* Breadcrumb 面包屑 */
+
+.ag-breadcrumb {
+  padding: 0 2px;
+}
+
+.ag-breadcrumb a {
+  color: inherit;
+}
+
+.ag-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Progress 进度条 */
+
+.ag-progress {
+  display: inline-block;
+  min-width: 200px;
+  height: 6px;
+  background-color: #EEEEEE;
+  margin-right: 10px;
+}
+
+.ag-progress-bar {
+  width: 0;
+  height: 100%;
+  transition: width 0.2s ease;
+}
+
+
+/* Loading 加载 */
+
+.ag-loading {
+  display: inline-block;
+}
+
+.ag-loading .ag-loading-bar {
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  border: 2px solid #30A8FF;
+  /*-webkit-transform-origin: 50% 50%;*/
+  transform-origin: 50% 50%;
+  /*-webkit-animation: ag-loading 1.5s linear infinite;*/
+  animation: ag-loading 1.5s linear infinite;
+}
+
+.ag-loading .ag-loading-bar:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  width: 11px;
+  height: 11px;
+  border-radius: 10px;
+  background-color: #30A8FF;
+}
+
+/*@-webkit-keyframes ag-loading {*/
+  /*0% {*/
+    /*-webkit-transform:rotate(0deg);*/
+  /*}*/
+  /*100% {*/
+    /*-webkit-transform:rotate(360deg);*/
+  /*}*/
+/*}*/
+
+@keyframes ag-loading {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
+
+/* Tabs 标签页 */
+
+.ag-tab {
+}
+
+.ag-tab .ag-tab-head {
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.ag-tab .ag-tab-head .ag-tab-head-item {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.ag-tab .ag-tab-head .ag-tab-head-item:hover {
+  color: #30A8FF;
+}
+
+.ag-tab .ag-tab-head .ag-tab-head-item[active] {
+  border-bottom: 2px solid #30A8FF;
+}
+
+.ag-tab .ag-tab-content {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.ag-tab .ag-tab-content .ag-tab-content-item {
+  display: none;
+}
+
+.ag-tab .ag-tab-content .ag-tab-content-item[active] {
+  display: block;
+}
+
+/* 卡片风格 */
+
+.ag-tab-card {
+}
+
+.ag-tab-card .ag-tab-head .ag-tab-head-item {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border: 1px solid #E7E7E7;
+}
+
+.ag-tab-card .ag-tab-head .ag-tab-head-item[active] {
+  border-bottom: 1px solid #fff;
+}
+
+
+
+/* Drawer 抽屉 */
+
+/* 遮罩 */
+.ag-drawer-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0,0,0,0.15);
+  display: none;
+}
+
+.ag-drawer-mask[active] {
+  display: block;
+}
+
+/* 抽屉 */
+.ag-drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  min-width: 200px;
+  transition: all .3s ease;
+  transform: translateX(100%);
+  visibility: hidden;
+}
+
+.ag-drawer[active] {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* 位置 */
+.ag-drawer.left {
+  right: auto;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.ag-drawer.left[active] {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* 颜色样式 */
+
+/* 红色 */
+
+.ag-red-1 {
+  color: #FF7676;
+}
+
+.ag-bg-red-1 {
+  background-color: #FF7676;
+}
+
+.ag-border-red-1 {
+  border-color: #FF7676;
+}
+
+.ag-red-2 {
+  color: #FF5050;
+}
+
+.ag-bg-red-2 {
+  background-color: #FF5050;
+}
+
+.ag-border-red-2 {
+  border-color: #FF5050;
+}
+
+.ag-red-3 {
+  color: #ED2E2E;
+}
+
+.ag-bg-red-3 {
+  background-color: #ED2E2E;
+}
+
+.ag-border-red-3 {
+  border-color: #ED2E2E;
+}
+
+.ag-red-4 {
+  color: #DE1111;
+}
+
+.ag-bg-red-4 {
+  background-color: #DE1111;
+}
+
+.ag-border-red-4 {
+  border-color: #DE1111;
+}
+
+.ag-red-5 {
+  color: #C50505;
+}
+
+.ag-bg-red-5 {
+  background-color: #C50505;
+}
+
+.ag-border-red-5 {
+  border-color: #C50505;
+}
+
+/* 橙色 */
+
+.ag-orange-1 {
+  color: #FEB57F;
+}
+
+.ag-bg-orange-1 {
+  background-color: #FEB57F;
+}
+
+.ag-border-orange-1 {
+  border-color: #FEB57F;
+}
+
+.ag-orange-2 {
+  color: #FC9F5B;
+}
+
+.ag-bg-orange-2 {
+  background-color: #FC9F5B;
+}
+
+.ag-border-orange-2 {
+  border-color: #FC9F5B;
+}
+
+.ag-orange-3 {
+  color: #FF6B1A;
+}
+
+.ag-bg-orange-3 {
+  background-color: #FF6B1A;
+}
+
+.ag-border-orange-3 {
+  border-color: #FF6B1A;
+}
+
+.ag-orange-4 {
+  color: #E8641B;
+}
+
+.ag-bg-orange-4 {
+  background-color: #E8641B;
+}
+
+.ag-border-orange-4 {
+  border-color: #E8641B;
+}
+
+.ag-orange-5 {
+  color: #CD4A02;
+}
+
+.ag-bg-orange-5 {
+  background-color: #CD4A02;
+}
+
+.ag-border-orange-5 {
+  border-color: #CD4A02;
+}
+
+/* 黄色 */
+
+.ag-yellow-1 {
+  color: #FFCF5D;
+}
+
+.ag-bg-yellow-1 {
+  background-color: #FFCF5D;
+}
+
+.ag-border-yellow-1 {
+  border-color: #FFCF5D;
+}
+
+.ag-yellow-2 {
+  color: #FFC63D;
+}
+
+.ag-bg-yellow-2 {
+  background-color: #FFC63D;
+}
+
+.ag-border-yellow-2 {
+  border-color: #FFC63D;
+}
+
+.ag-yellow-3 {
+  color: #FFB606;
+}
+
+.ag-bg-yellow-3 {
+  background-color: #FFB606;
+}
+
+.ag-border-yellow-3 {
+  border-color: #FFB606;
+}
+
+.ag-yellow-4 {
+  color: #F5AE07;
+}
+
+.ag-bg-yellow-4 {
+  background-color: #F5AE07;
+}
+
+.ag-border-yellow-4 {
+  border-color: #F5AE07;
+}
+
+.ag-yellow-5 {
+  color: #DF9D00;
+}
+
+.ag-bg-yellow-5 {
+  background-color: #DF9D00;
+}
+
+.ag-border-yellow-5 {
+  border-color: #DF9D00;
+}
+
+/* 绿色 */
+
+.ag-green-1 {
+  color: #BFF866;
+}
+
+.ag-bg-green-1 {
+  background-color: #BFF866;
+}
+
+.ag-border-green-1 {
+  border-color: #BFF866;
+}
+
+.ag-green-2 {
+  color: #B9EB40;
+}
+
+.ag-bg-green-2 {
+  background-color: #B9EB40;
+}
+
+.ag-border-green-2 {
+  border-color: #B9EB40;
+}
+
+.ag-green-3 {
+  color: #A0D521;
+}
+
+.ag-bg-green-3 {
+  background-color: #A0D521;
+}
+
+.ag-border-green-3 {
+  border-color: #A0D521;
+}
+
+.ag-green-4 {
+  color: #8EC30E;
+}
+
+.ag-bg-green-4 {
+  background-color: #8EC30E;
+}
+
+.ag-border-green-4 {
+  border-color: #8EC30E;
+}
+
+.ag-green-5 {
+  color: #79AA04;
+}
+
+.ag-bg-green-5 {
+  background-color: #79AA04;
+}
+
+.ag-border-green-5 {
+  border-color: #79AA04;
+}
+
+/* 青色 */
+
+.ag-cyan-1 {
+  color: #85F9FD;
+}
+
+.ag-bg-cyan-1 {
+  background-color: #85F9FD;
+}
+
+.ag-border-cyan-1 {
+  border-color: #85F9FD;
+}
+
+.ag-cyan-2 {
+  color: #61F0F5;
+}
+
+.ag-bg-cyan-2 {
+  background-color: #61F0F5;
+}
+
+.ag-border-cyan-2 {
+  border-color: #61F0F5;
+}
+
+.ag-cyan-3 {
+  color: #1DDAE1;
+}
+
+.ag-bg-cyan-3 {
+  background-color: #1DDAE1;
+}
+
+.ag-border-cyan-3 {
+  border-color: #1DDAE1;
+}
+
+.ag-cyan-4 {
+  color: #19C7CD;
+}
+
+.ag-bg-cyan-4 {
+  background-color: #19C7CD;
+}
+
+.ag-border-cyan-4 {
+  border-color: #19C7CD;
+}
+
+.ag-cyan-5 {
+  color: #08B3B9;
+}
+
+.ag-bg-cyan-5 {
+  background-color: #08B3B9;
+}
+
+.ag-border-cyan-5 {
+  border-color: #08B3B9;
+}
+
+/* 蓝色 */
+
+.ag-blue-1 {
+  color: #83CBFF;
+}
+
+.ag-bg-blue-1 {
+  background-color: #83CBFF;
+}
+
+.ag-border-blue-1 {
+  border-color: #83CBFF;
+}
+
+.ag-blue-2 {
+  color: #5CBBFF;
+}
+
+.ag-bg-blue-2 {
+  background-color: #5CBBFF;
+}
+
+.ag-border-blue-2 {
+  border-color: #5CBBFF;
+}
+
+.ag-blue-3 {
+  color: #30A8FF;
+}
+
+.ag-bg-blue-3 {
+  background-color: #30A8FF;
+}
+
+.ag-border-blue-3 {
+  border-color: #30A8FF;
+}
+
+.ag-blue-4 {
+  color: #0A8BE8;
+}
+
+.ag-bg-blue-4 {
+  background-color: #0A8BE8;
+}
+
+.ag-border-blue-4 {
+  border-color: #0A8BE8;
+}
+
+.ag-blue-5 {
+  color: #0770D2;
+}
+
+.ag-bg-blue-5 {
+  background-color: #0770D2;
+}
+
+.ag-border-blue-5 {
+  border-color: #0770D2;
+}
+
+/* 紫色 */
+
+.ag-purple-1 {
+  color: #D5BAFB;
+}
+
+.ag-bg-purple-1 {
+  background-color: #D5BAFB;
+}
+
+.ag-border-purple-1 {
+  border-color: #D5BAFB;
+}
+
+.ag-purple-2 {
+  color: #BA8FF8;
+}
+
+.ag-bg-purple-2 {
+  background-color: #BA8FF8;
+}
+
+.ag-border-purple-2 {
+  border-color: #BA8FF8;
+}
+
+.ag-purple-3 {
+  color: #9E62F6;
+}
+
+.ag-bg-purple-3 {
+  background-color: #9E62F6;
+}
+
+.ag-border-purple-3 {
+  border-color: #9E62F6;
+}
+
+.ag-purple-4 {
+  color: #863EEF;
+}
+
+.ag-bg-purple-4 {
+  background-color: #863EEF;
+}
+
+.ag-border-purple-4 {
+  border-color: #863EEF;
+}
+
+.ag-purple-5 {
+  color: #6A12EB;
+}
+
+.ag-bg-purple-5 {
+  background-color: #6A12EB;
+}
+
+.ag-border-purple-5 {
+  border-color: #6A12EB;
+}
+
+/* 灰色 */
+
+.ag-gray-1 {
+  color: #d8d8d8;
+}
+
+.ag-bg-gray-1 {
+  background-color: #d8d8d8;
+}
+
+.ag-border-gray-1 {
+  border-color: #d8d8d8;
+}
+
+.ag-gray-2 {
+  color: #b0b0b0;
+}
+
+.ag-bg-gray-2 {
+  background-color: #b0b0b0;
+}
+
+.ag-border-gray-2 {
+  border-color: #b0b0b0;
+}
+
+.ag-gray-3 {
+  color: #999999;
+}
+
+.ag-bg-gray-3 {
+  background-color: #999999;
+}
+
+.ag-border-gray-3 {
+  border-color: #999999;
+}
+
+.ag-gray-4 {
+  color: #666666;
+}
+
+.ag-bg-gray-4 {
+  background-color: #666666;
+}
+
+.ag-border-gray-4 {
+  border-color: #666666;
+}
+
+.ag-gray-5 {
+  color: #333333;
+}
+
+.ag-bg-gray-5 {
+  background-color: #333333;
+}
+
+.ag-border-gray-5 {
+  border-color: #333333;
+}
+
+/* 白色 */
+.ag-white {
+  color: #fff;
+}
+
+.ag-bg-white {
+  background-color: #fff;
+}
+
+.ag-border-white {
+  border-color: #fff;
+}
+
+/* 黑色 */
+.ag-black {
+  color: #000;
+}
+
+.ag-bg-black {
+  background-color: #000;
+}
+
+.ag-border-black {
+  border-color: #000;
+}

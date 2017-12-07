@@ -29,6 +29,7 @@ gulp.task('default', function () {
 		'./src/color.css',
 	])
 		.pipe(concat('ag-ui-' + version + '.css'))
+		.pipe(gulp.dest('./docs'))
 		.pipe(gulp.dest('./dist/'));
 });
 

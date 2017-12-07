@@ -1,6 +1,76 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+*{
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+
+body{
+  min-width: 1200px;
+  color: #282828;
+  height: 100%;
+  /*margin-bottom: 40px;*/
+}
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+a{
+  text-decoration: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /*
-    *自定义样式
-*/
+ * 自定义样式
+ */
 html, body, h1, h2, h3, h4, h5, h6, hr, div, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, i {
   margin: 0;
   padding: 0;
@@ -220,9 +290,9 @@ h1, h2, h3, h4, h5, h6 {
 /*侧边栏*/
 .rx-visual .rx-sidebar {
   position: fixed;
-  top: 46px;
-  left: 78px;
-  bottom: 46px;
+  top: 60px;
+  left: 20px;
+  bottom: 40px;
   width: 240px;
   border: 1px solid #e7e7e7;
   border-radius: 5px;
@@ -247,7 +317,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*可视化展示--右侧*/
 .rx-page-component {
-  padding: 0 50px 50px 348px;
+  padding: 0 50px 50px 300px;
 }
 
 .rx-page-component .rx-each-item {
@@ -912,4 +982,170 @@ code {
 
 .code-wrap.drawer button {
   margin-right: 10px;
+}
+
+/*头部*/
+.aigo-header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #30a8ff;
+  color: #fff;
+  position: relative;
+}
+
+.aigo-logo {
+  font-size: 18px;
+}
+
+.aigo-logo a {
+
+}
+
+.aigo-logo img {
+  height: 36px;
+  position: relative;
+  top: 7px;
+  left: 5px;
+}
+
+.aigo-logo .symbol {
+  position: relative;
+  vertical-align: top;
+  padding: 0 5px;
+}
+
+.aigo-logo .name {
+  color: #fff;
+  font-size: inherit;
+  position: relative;
+  vertical-align: top;
+}
+
+.aigo-menu {
+  position: absolute;
+  top: 0;
+  right: 70px;
+}
+
+.aigo-menu:after {
+  clear: both;
+}
+
+.aigo-menu li {
+  float: left;
+}
+
+.aigo-menu li a {
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 20px;
+  margin: 0 2px;
+  box-sizing: border-box;
+}
+
+.aigo-menu li.aigo-menu-item a {
+
+}
+
+.aigo-menu li.aigo-menu-item:hover a,
+.aigo-menu li.aigo-menu-item.active a {
+  background-color: #0094ff;
+  border-radius: 20px;
+}
+
+.aigo-github {
+  position: absolute;
+  top: 8px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+/*updatelog*/
+
+.aigo-page-content {
+  width: 90%;
+  margin: 100px auto;
+  min-height: 600px;
+}
+
+.aigo-updatelog-box {
+  width: 100%;
+  color: #585858;
+}
+
+.aigo-updatelog-box .edition {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.aigo-updatelog-box .edition:first-child {
+  padding-top: 0px;
+}
+
+.aigo-updatelog-box .edition:last-child {
+  padding-bottom: 0px;
+}
+
+.aigo-updatelog-box .edition .circle {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 1px solid #3aacff;
+  float: left;
+  margin: 3px 17px 0 -10px;
+  background-color: #ffffff;
+}
+
+.aigo-updatelog-box .edition .small-font {
+  float: left;
+  font-size: 14px;
+  color: #888888;
+  font-weight: normal;
+  padding: 7px 0 0 7px;
+}
+
+.aigo-updatelog-box .message {
+  padding: 18px 25px;
+  border-left: 1px solid #e6e6e6;
+  margin: -4px 0 -4px 0px;
+}
+
+.aigo-updatelog-box .message .date {
+  display: inline-block;
+  color: #888888;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  padding: 8px 14px;
+  margin-bottom: 24px;
+}
+
+.aigo-updatelog-box .message ul.message-list {
+  list-style-type: disc;
+  font-size: 14px;
+  margin-left: 18px;
+}
+
+.aigo-updatelog-box .message ul.message-list li {
+  margin-bottom: 10px;
+}
+
+
+/*footer*/
+
+.aigo-footer {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  background-color: #30a8ff;
+}
+
+.aigo-footer a  {
+  color: #fff;
 }
