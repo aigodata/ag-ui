@@ -498,11 +498,6 @@ body {
 
 .gradient {
   background: #4cd964;
-  background: -moz-linear-gradient(45deg,#4cd964 0%,#5ac8fa 100%);
-  background: -webkit-gradient(left bottom,right top,color-stop(0%,#4cd964),color-stop(100%,#5ac8fa));
-  background: -webkit-linear-gradient(45deg,#4cd964 0%,#5ac8fa 100%);
-  background: -o-linear-gradient(45deg,#4cd964 0%,#5ac8fa 100%);
-  background: -ms-linear-gradient(45deg,#4cd964 0%,#5ac8fa 100%);
   background: linear-gradient(45deg,#4cd964 0%,#5ac8fa 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4cd964',endColorstr='#5ac8fa',GradientType=1);
   margin: 0 auto;
@@ -1141,11 +1136,11 @@ code {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  color: #fff;
+  color: #999;
   font-size: 14px;
-  background-color: #30a8ff;
+  background-color: #000;
 }
 
 .aigo-footer a  {
-  color: #fff;
+  color: #999;
 }
